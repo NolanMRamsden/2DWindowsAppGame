@@ -60,10 +60,10 @@ namespace FieldFighter.Hittable
                     walkBackward();
                     break;
                 case CharacterEnums.ECharacterAction.MELEEATTACK:
-                    attack(brain.myTarget, true);
+                    attackTop(brain.myTarget, true);
                     break;
                 case CharacterEnums.ECharacterAction.RANGEATTACK:
-                    attack(brain.myTarget, false);
+                    attackTop(brain.myTarget, false);
                     break;
             }
             animSet.currentAnimation.Update();
@@ -117,13 +117,26 @@ namespace FieldFighter.Hittable
 
         /** handles air and ground unit filtering and attack pacing */
         protected int attackCounter = 0;
-        protected virtual void attack(HittableTarget target, Boolean isMelee)
+        private void attackTop(HittableTarget target, Boolean isMelee)
         {
             if (facing == CharacterEnums.EDirection.RIGHT)
-                animSet.currentAnimation = animSet.rightAttack;
+            {
+                if (isMelee)
+                    animSet.currentAnimation = animSet.rightAttack;
+                else
+                    animSet.currentAnimation = animSet.rightAttackRange;
+            }
             else
-                animSet.currentAnimation = animSet.leftAttack;
-
+            {
+                if (isMelee)
+                    animSet.currentAnimation = animSet.leftAttack;
+                else
+                    animSet.currentAnimation = animSet.leftAttackRange;
+            }
+            attack(target, isMelee);
+        }
+        protected virtual void attack(HittableTarget target, Boolean isMelee)
+        {
             if (canAttackType == CharacterEnums.EType.BOTH || canAttackType == target.myType || target.myType == CharacterEnums.EType.BOTH)
             {
                 attackCounter++;

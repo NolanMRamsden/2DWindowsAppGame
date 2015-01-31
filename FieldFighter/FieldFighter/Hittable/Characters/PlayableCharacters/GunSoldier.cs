@@ -1,5 +1,8 @@
 ﻿using FieldFighter.Hittable.CharacterLogic;
+using FieldFighter.Hittable.Elements;
 using FieldFighter.Utilities;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +11,26 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
-    class AirRangedCharacter : RangedCharacter
+    class GunSoldier : RangedCharacter
     {
-        public AirRangedCharacter() : base()
+        private static LoaderPackage package = new LoaderPackage()
         {
-            canAttackType = myType = CharacterEnums.EType.AIR;
+            sourceString = "SoldierRanged",
+            attackAnim = 19,
+            attackSprites = 5,
+            walkAnim = 9,
+            walkSprites = 6
+        };
+
+        public GunSoldier() : base()
+        {
+            canAttackType = CharacterEnums.EType.GROUND;
+            myType = CharacterEnums.EType.GROUND;
         }
 
         public override string ToString()
         {
-            return "Air Ranged";
+            return "Ground Ranged";
         }
 
         protected override int getWalkSpeed()
@@ -47,30 +60,32 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override CharacterBrain getBrain()
         {
-            return new RangedBrain(500, 52);
+            return new RangedBrain(500,52);
         }
 
         protected override AnimationSet getAnimSet()
         {
-            return RectangleGenerator.getRectangleAnimSet(30, 60);
+            return AnimationLoader.loadAnimation(package);
         }
+
     }
 
-    class AirRangedCharacterPlus : AirRangedCharacter
+    class GunSoldierPlus : GunSoldier
     {
         public override string ToString()
         {
             return base.ToString() + "+";
         }
 
-        protected override CharacterBrain getBrain()
+        protected override int getAttackCount()
         {
-            return new RangedBrain(800,52);
+            return (int)(base.getAttackCount()*0.65);
         }
 
-        protected override int getMeleeDamage()
+        protected override int getRangedDamage()
         {
-            return base.getRangedDamage();
+            return (int)(base.getRangedDamage()*1.2);
         }
+
     }
 }

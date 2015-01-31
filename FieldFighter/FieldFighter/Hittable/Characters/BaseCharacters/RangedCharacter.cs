@@ -34,11 +34,6 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         /** altered attack method to spawn projectiles on ranged attack */
         protected override void attack(HittableTarget target, Boolean isMelee)
         {
-            if (facing == CharacterEnums.EDirection.RIGHT)
-                animSet.currentAnimation = animSet.rightAttack;
-            else
-                animSet.currentAnimation = animSet.leftAttack;
-
             if (canAttackType == CharacterEnums.EType.BOTH || canAttackType == target.myType || target.myType == CharacterEnums.EType.BOTH)
             {
                 attackCounter++;

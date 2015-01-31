@@ -15,8 +15,9 @@ namespace FieldFighter.Utilities
         public int attackSprites { get; set; }
         public int walkAnim { get; set; }
         public int walkSprites { get; set; }
-        public int dieAnim { get; set; }
-        public int dieSprites { get; set; }
+        public int rangeAttackAnim { get; set; }
+        public int rangeAttackSprites { get; set; }
+        public Boolean hasSecondaryAnim = false;
     }
 
     public class AnimationLoader
@@ -38,9 +39,17 @@ namespace FieldFighter.Utilities
             set.leftWalk = pngToAnimation(baseString + leftWalk, p.walkSprites, p.walkAnim);
             set.rightAttack = pngToAnimation(baseString + rightAttack, p.attackSprites, p.attackAnim);
             set.rightWalk = pngToAnimation(baseString + rightWalk, p.walkSprites, p.walkAnim);
+            if (p.hasSecondaryAnim)
+            {
+                set.rightAttackRange = pngToAnimation(baseString + rightAttackRange, p.rangeAttackSprites, p.rangeAttackAnim);
+                set.leftAttackRange = pngToAnimation(baseString + leftAttackRange, p.rangeAttackSprites, p.rangeAttackAnim);
+            }else
+            {
+                set.rightAttackRange = set.rightAttack;
+                set.leftAttackRange = set.leftAttack;
+            }
 
-            set.leftDie = set.rightDie = set.leftAttack;
-            set.currentAnimation = set.rightAttack;
+            set.currentAnimation = set.rightWalk;
             return set;
         }
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
-    class AirMeleeCharacter : HittableCharacter
+    class OrangeBirdSmall : HittableCharacter
     {
         private static LoaderPackage package = new LoaderPackage()
         {
@@ -20,7 +20,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             walkSprites = 4
         };
 
-        public AirMeleeCharacter() : base()
+        public OrangeBirdSmall() : base()
         {
             canAttackType = CharacterEnums.EType.BOTH;
             myType = CharacterEnums.EType.AIR;
@@ -63,7 +63,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         }
     }
 
-    class AirMeleeCharacterPlus : AirMeleeCharacter
+    class OrangeBird : OrangeBirdSmall
     {
         private static LoaderPackage package = new LoaderPackage()
         {

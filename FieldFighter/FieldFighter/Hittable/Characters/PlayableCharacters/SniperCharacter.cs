@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
-    class SniperCharacter : GroundRangedCharacter
+    class SniperCharacter : GunSoldier
     {
         private static LoaderPackage package = new LoaderPackage()
         {
@@ -115,7 +115,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
     }
 
-    class MachineGunCharacter : GroundRangedCharacter
+    class MachineGunCharacter : GunSoldier
     {
         Boolean high;
         public MachineGunCharacter() : base()

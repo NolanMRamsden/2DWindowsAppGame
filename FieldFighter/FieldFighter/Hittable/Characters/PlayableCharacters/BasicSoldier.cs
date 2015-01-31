@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
-    class GroundMeleeCharacter : HittableCharacter
+    class BasicSoldier : HittableCharacter
     {
         private static LoaderPackage package = new LoaderPackage()
         {
@@ -21,7 +21,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             walkSprites = 6
         };
 
-        public GroundMeleeCharacter() : base()
+        public BasicSoldier() : base()
         {
             canAttackType = CharacterEnums.EType.GROUND;
             myType = CharacterEnums.EType.GROUND;
@@ -64,7 +64,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         }
     }
 
-    class GroundMeleeCharacterPlus : GroundMeleeCharacter
+    class BasicSoldierPlus : BasicSoldier
     {
         public override string ToString()
         {

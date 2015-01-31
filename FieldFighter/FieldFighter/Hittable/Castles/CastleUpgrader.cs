@@ -1,5 +1,6 @@
 ﻿using FieldFighter.Hittable.CharacterLogic;
 using FieldFighter.Hittable.Characters.BaseCharacters;
+using FieldFighter.Hittable.Characters.PlayableCharacters;
 using FieldFighter.Utilities;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -28,9 +29,9 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 3500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(GroundMeleeCharacter),
+            meleeCharacter = typeof(SuicideJacket),
             rangedCharacter = typeof(SniperCharacter),
-            specialCharacter = typeof(AirMeleeCharacter),
+            specialCharacter = typeof(OrangeBirdSmall),
             signatureString = "Castle 1-2-2"
         };
 
@@ -39,9 +40,9 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 3000,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(GroundMeleeCharacterPlus),
+            meleeCharacter = typeof(BasicSoldierPlus),
             rangedCharacter = typeof(RocketLauncherCharacter),
-            specialCharacter = typeof(AirRangedCharacterPlus),
+            specialCharacter = typeof(OrangeBird),
             signatureString = "Castle 1-2-1"
         };
 
@@ -50,9 +51,9 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 2500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(TankMeleeCharacter),
-            rangedCharacter = typeof(GroundRangedCharacterPlus),
-            specialCharacter = typeof(AirMeleeCharacterPlus),
+            meleeCharacter = typeof(RiotMan),
+            rangedCharacter = typeof(GunSoldierPlus),
+            specialCharacter = typeof(OrangeBird),
             signatureString = "Castle 1-1-2"
         };
 
@@ -61,7 +62,7 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 2500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(GroundMeleeCharacterPlus),
+            meleeCharacter = typeof(BasicSoldierPlus),
             rangedCharacter = typeof(MachineGunCharacter),
             specialCharacter = typeof(TowerMeleeCharacter),
             signatureString = "Castle 1-1-1"
@@ -74,9 +75,9 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200, 300),
             left = set6,
             right = set7,
-            meleeCharacter = typeof(GroundMeleeCharacterPlus),
+            meleeCharacter = typeof(BasicSoldierPlus),
             rangedCharacter = typeof(SniperCharacter),
-            specialCharacter = typeof(AirMeleeCharacter),
+            specialCharacter = typeof(OrangeBirdSmall),
             signatureString = "Castle 1-2"
         };
 
@@ -87,9 +88,9 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200, 300),
             left = set4,
             right = set5,
-            meleeCharacter = typeof(TankMeleeCharacter),
+            meleeCharacter = typeof(RiotMan),
             rangedCharacter = typeof(MachineGunCharacter),
-            specialCharacter = typeof(AirMeleeCharacterPlus),
+            specialCharacter = typeof(OrangeBird),
             signatureString = "Castle 1-1"
         };
 
@@ -99,9 +100,9 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200,200),
             left = set2,
             right = set3,
-            meleeCharacter = typeof(GroundMeleeCharacter),
-            rangedCharacter = typeof(GroundRangedCharacter),
-            specialCharacter = typeof(AirMeleeCharacter),
+            meleeCharacter = typeof(BasicSoldier),
+            rangedCharacter = typeof(GunSoldier),
+            specialCharacter = typeof(OrangeBirdSmall),
             signatureString = "Castle 1"
         };
 

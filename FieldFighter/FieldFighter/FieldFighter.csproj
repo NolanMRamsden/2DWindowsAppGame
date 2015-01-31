@@ -110,11 +110,13 @@
     <Compile Include="Enviroment\Ground.cs" />
     <Compile Include="Enviroment\Sky.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\AirRangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\MeleeCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\RangedCharacter.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\SniperCharacter.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\TankMeleeCharacter.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\TowerMeleeCharacter.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\SniperCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\SuicideCharacter.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\SuicideJacket.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\RiotMan.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\TowerMeleeCharacter.cs" />
     <Compile Include="Hittable\Elements\Bullet.cs" />
     <Compile Include="Hittable\Elements\SniperBullet.cs" />
     <Compile Include="Pages\GamePage.xaml.cs">
@@ -122,9 +124,9 @@
     </Compile>
     <Compile Include="Hittable\Castles\Castle.cs" />
     <Compile Include="Hittable\Castles\CastleUpgrader.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\AirMeleeCharacter.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\GroundMeleeCharacter.cs" />
-    <Compile Include="Hittable\Characters\BaseCharacters\GroundRangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\OrangeBird.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\BasicSoldier.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\GunSoldier.cs" />
     <Compile Include="Hittable\Characters\CharacterLogic\CharacterEnums.cs" />
     <Compile Include="Hittable\Characters\CharacterLogic\CharacterBrain.cs" />
     <Compile Include="Hittable\Characters\CharacterLogic\MeleeBrain.cs" />
@@ -195,6 +197,10 @@
     <Content Include="Content\Soldier\SoldierLW.png" />
     <Content Include="Content\Soldier\SoldierRA.png" />
     <Content Include="Content\Soldier\SoldierRW.png" />
+    <Content Include="Content\SuicideJacket\SuicideJacketLA.png" />
+    <Content Include="Content\SuicideJacket\SuicideJacketLW.png" />
+    <Content Include="Content\SuicideJacket\SuicideJacketRA.png" />
+    <Content Include="Content\SuicideJacket\SuicideJacketRW.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

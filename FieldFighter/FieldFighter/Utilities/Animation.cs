@@ -14,11 +14,9 @@ namespace FieldFighter.Utilities
         public Animation rightWalk;
         public Animation leftAttack;
         public Animation rightAttack;
-        public Animation leftDie;
-        public Animation rightDie;
+        public Animation rightAttackRange;
+        public Animation leftAttackRange;
         public Animation currentAnimation;
-        public int spriteHeight;
-        public int spriteWidth;
 
         public void Update()
         {
@@ -27,18 +25,6 @@ namespace FieldFighter.Utilities
         public void Draw(SpriteBatch spriteBatch, Vector2 location)
         {
             currentAnimation.Draw(spriteBatch, location);
-        }
-
-        public AnimationSet Clone()
-        {
-            AnimationSet set = new AnimationSet();
-            set.leftAttack = this.leftAttack.Clone();
-            set.rightAttack = this.rightAttack.Clone();
-            set.rightDie = this.rightDie.Clone();
-            set.leftDie = this.leftDie.Clone();
-            set.rightWalk = this.rightWalk.Clone();
-            set.leftWalk = this.leftWalk.Clone();
-            return set;
         }
     }
     public class Animation
@@ -88,13 +74,6 @@ namespace FieldFighter.Utilities
             Rectangle sourceRectangle = new Rectangle(width * column, height * row, width, height);
             Rectangle destinationRectangle = new Rectangle((int)location.X, (int)location.Y - height, width, height);
             spriteBatch.Draw(Texture, destinationRectangle, sourceRectangle, Color.White);
-        }
-        public Animation Clone()
-        {
-            Animation sp = new Animation(Texture, totalSpritesPerRow, Texture.Height / height, row + 1, updateCountMax);
-            sp.totalFrames = this.totalFrames;
-            sp.minFrame = this.minFrame;
-            return sp;
         }
     }
 }
