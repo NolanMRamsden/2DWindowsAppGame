@@ -1,0 +1,149 @@
+﻿'FieldFighter.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\Nolan\documents\visual studio 2013\Projects\FieldFighter\FieldFighter\bin\Debug\AppX\FieldFighter.exe'. Symbols loaded.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\system32\WinMetadata\Windows.UI.Xaml.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices.WindowsRuntime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.WindowsRuntime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\system32\WinMetadata\Windows.ApplicationModel.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\system32\WinMetadata\Windows.UI.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Users\Nolan\documents\visual studio 2013\Projects\FieldFighter\FieldFighter\bin\Debug\AppX\MonoGame.Framework.DLL'. Cannot find or open the PDB file.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Collections\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Collections.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.WindowsRuntime\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.WindowsRuntime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\system32\WinMetadata\Windows.Graphics.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\system32\WinMetadata\Windows.Foundation.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Extensions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.ComponentModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Reflection\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Reflection.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Users\Nolan\documents\visual studio 2013\Projects\FieldFighter\FieldFighter\bin\Debug\AppX\SharpDX.DLL'. Cannot find or open the PDB file.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Users\Nolan\documents\visual studio 2013\Projects\FieldFighter\FieldFighter\bin\Debug\AppX\SharpDX.Direct3D11.DLL'. Cannot find or open the PDB file.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Users\Nolan\documents\visual studio 2013\Projects\FieldFighter\FieldFighter\bin\Debug\AppX\SharpDX.Direct2D1.DLL'. Cannot find or open the PDB file.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Users\Nolan\documents\visual studio 2013\Projects\FieldFighter\FieldFighter\bin\Debug\AppX\SharpDX.DXGI.DLL'. Cannot find or open the PDB file.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.IO\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.IO.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading.Tasks\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.Tasks.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Text.Encoding\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Text.Encoding.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\system32\WinMetadata\Windows.Devices.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Diagnostics.Debug\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Diagnostics.Debug.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FieldFighter.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+13:22:59.285 [INFO ] -- Castle facing RIGHT upgraded to: Test Upgrade Castle
+13:23:05.408 [DEBUG] -- Ground Ranged attacked Tower Melee(Ranged 100 dmg)
+13:23:05.474 [DEBUG] -- Ground Ranged attacked Tower Melee(Ranged 100 dmg)
+13:23:05.592 [DEBUG] -- Tower Melee at 86% health
+13:23:05.684 [DEBUG] -- Tower Melee at 71% health
+13:23:05.891 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:05.892 [DEBUG] -- Tower Melee at 63% health
+13:23:06.267 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:06.268 [DEBUG] -- Air Melee at 92% health
+13:23:06.724 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:06.725 [DEBUG] -- Tower Melee at 54% health
+13:23:07.079 [DEBUG] -- Ground Ranged attacked Tower Melee(Ranged 100 dmg)
+13:23:07.141 [DEBUG] -- Ground Ranged attacked Tower Melee(Ranged 100 dmg)
+13:23:07.250 [DEBUG] -- Tower Melee at 40% health
+13:23:07.361 [DEBUG] -- Tower Melee at 26% health
+13:23:07.439 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:07.440 [DEBUG] -- Air Melee at 84% health
+13:23:07.557 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:07.557 [DEBUG] -- Tower Melee at 17% health
+13:23:08.400 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:08.402 [DEBUG] -- Tower Melee at 9% health
+13:23:08.610 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:08.610 [DEBUG] -- Air Melee at 76% health
+13:23:08.734 [DEBUG] -- Ground Ranged attacked Tower Melee(Ranged 100 dmg)
+13:23:08.817 [DEBUG] -- Ground Ranged attacked Tower Melee(Ranged 100 dmg)
+13:23:08.927 [INFO ] -- Tower Melee died
+13:23:09.017 [INFO ] -- Tower Melee died
+13:23:09.123 [DEBUG] -- Sniper attacked Ground Ranged(Ranged 300 dmg)
+13:23:09.201 [DEBUG] -- Sniper attacked Ground Ranged(Ranged 300 dmg)
+13:23:09.329 [INFO ] -- Ground Ranged died
+13:23:09.406 [INFO ] -- Ground Ranged died
+13:23:11.892 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:11.892 [DEBUG] -- Tower Melee at 91% health
+13:23:12.080 [DEBUG] -- Ground Ranged attacked Ground Tank Man(Ranged 100 dmg)
+13:23:12.623 [DEBUG] -- Ground Tank Man at 90% health
+13:23:12.724 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:12.724 [DEBUG] -- Tower Melee at 83% health
+13:23:12.808 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:12.808 [DEBUG] -- Air Melee at 68% health
+13:23:13.558 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:13.559 [DEBUG] -- Tower Melee at 74% health
+13:23:13.734 [DEBUG] -- Ground Ranged attacked Ground Tank Man(Ranged 100 dmg)
+13:23:13.974 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:13.974 [DEBUG] -- Air Melee at 60% health
+13:23:13.984 [DEBUG] -- Ground Tank Man at 80% health
+13:23:14.391 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:14.391 [DEBUG] -- Tower Melee at 66% health
+13:23:15.140 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:15.140 [DEBUG] -- Air Melee at 52% health
+13:23:15.224 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:15.224 [DEBUG] -- Tower Melee at 57% health
+13:23:15.406 [DEBUG] -- Ground Ranged attacked Ground Tank Man(Melee 10 dmg)
+13:23:15.407 [DEBUG] -- Ground Tank Man at 79% health
+13:23:16.057 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:16.057 [DEBUG] -- Tower Melee at 49% health
+13:23:16.307 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:16.308 [DEBUG] -- Air Melee at 44% health
+13:23:16.342 [DEBUG] -- Ground Tank Man attacked Ground Ranged(Melee 20 dmg)
+13:23:16.344 [DEBUG] -- Ground Ranged at 93% health
+13:23:16.894 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:16.895 [DEBUG] -- Tower Melee at 40% health
+13:23:17.077 [DEBUG] -- Ground Ranged attacked Ground Tank Man(Melee 10 dmg)
+13:23:17.078 [DEBUG] -- Ground Tank Man at 78% health
+The thread 0x16f4 has exited with code 259 (0x103).
+13:23:17.458 [DEBUG] -- Sniper attacked Ground Ranged(Ranged 300 dmg)
+13:23:17.477 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:17.478 [DEBUG] -- Air Melee at 36% health
+13:23:17.542 [DEBUG] -- Sniper attacked Ground Ranged(Ranged 300 dmg)
+13:23:17.611 [INFO ] -- Ground Ranged died
+13:23:17.694 [INFO ] -- Ground Ranged died
+13:23:17.727 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:17.727 [DEBUG] -- Tower Melee at 31% health
+13:23:18.551 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:18.551 [DEBUG] -- Tower Melee at 23% health
+13:23:18.643 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:18.644 [DEBUG] -- Air Melee at 28% health
+13:23:19.394 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:19.394 [DEBUG] -- Tower Melee at 14% health
+13:23:19.810 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:19.811 [DEBUG] -- Air Melee at 20% health
+13:23:20.227 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:20.228 [DEBUG] -- Tower Melee at 91% health
+13:23:20.728 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:20.729 [DEBUG] -- Air Melee at 12% health
+13:23:20.977 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:20.978 [DEBUG] -- Air Melee at 4% health
+13:23:21.060 [DEBUG] -- Air Melee attacked Tower Melee(Melee 60 dmg)
+13:23:21.061 [DEBUG] -- Tower Melee at 83% health
+The thread 0x26dc has exited with code 259 (0x103).
+13:23:21.885 [DEBUG] -- Tower Melee attacked Air Melee(Melee 40 dmg)
+13:23:21.885 [INFO ] -- Air Melee died
+13:23:25.027 [DEBUG] -- Ground Tank Man attacked Base Castle(Melee 20 dmg)
+13:23:25.028 [DEBUG] -- Base Castle at 98% health
+13:23:26.360 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:26.361 [DEBUG] -- Base Castle at 94% health
+13:23:26.458 [DEBUG] -- Sniper attacked Base Castle(Ranged 300 dmg)
+13:23:26.694 [DEBUG] -- Ground Tank Man attacked Base Castle(Melee 20 dmg)
+13:23:26.694 [DEBUG] -- Base Castle at 92% health
+13:23:26.744 [DEBUG] -- Sniper attacked Base Castle(Ranged 300 dmg)
+13:23:26.827 [DEBUG] -- Base Castle at 62% health
+13:23:27.111 [DEBUG] -- Base Castle at 32% health
+13:23:27.277 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:27.278 [DEBUG] -- Base Castle at 28% health
+13:23:27.527 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:27.527 [DEBUG] -- Base Castle at 24% health
+13:23:28.360 [DEBUG] -- Ground Tank Man attacked Base Castle(Melee 20 dmg)
+13:23:28.361 [DEBUG] -- Base Castle at 22% health
+13:23:28.444 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:28.444 [DEBUG] -- Base Castle at 18% health
+13:23:28.694 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:28.695 [DEBUG] -- Base Castle at 14% health
+13:23:29.612 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:29.613 [DEBUG] -- Base Castle at 10% health
+13:23:29.860 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:29.860 [DEBUG] -- Base Castle at 6% health
+13:23:30.018 [DEBUG] -- Ground Tank Man attacked Base Castle(Melee 20 dmg)
+13:23:30.018 [DEBUG] -- Base Castle at 4% health
+13:23:30.768 [DEBUG] -- Tower Melee attacked Base Castle(Melee 40 dmg)
+13:23:30.768 [INFO ] -- Base Castle died
+The program '[2596] FieldFighter.exe' has exited with code 0 (0x0).

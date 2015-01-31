@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78C441FD-1902-4AD8-B609-0C478EFEC417}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FieldFighter</RootNamespace>
+    <AssemblyName>FieldFighter</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>FieldFighter_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <NuGetPackageImportStamp>9a485482</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enviroment\Enviroment.cs" />
+    <Compile Include="Enviroment\Ground.cs" />
+    <Compile Include="Enviroment\Sky.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\AirRangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\RangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\SniperCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\TankMeleeCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\TowerMeleeCharacter.cs" />
+    <Compile Include="Hittable\Elements\Bullet.cs" />
+    <Compile Include="Hittable\Elements\SniperBullet.cs" />
+    <Compile Include="Pages\GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hittable\Castles\Castle.cs" />
+    <Compile Include="Hittable\Castles\CastleUpgrader.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\AirMeleeCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\GroundMeleeCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\GroundRangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\CharacterLogic\CharacterEnums.cs" />
+    <Compile Include="Hittable\Characters\CharacterLogic\CharacterBrain.cs" />
+    <Compile Include="Hittable\Characters\CharacterLogic\MeleeBrain.cs" />
+    <Compile Include="Hittable\Characters\CharacterLogic\RangedBrain.cs" />
+    <Compile Include="Hittable\Characters\CharacterLogic\RangedHiderBrain.cs" />
+    <Compile Include="Hittable\Elements\HealthBar.cs" />
+    <Compile Include="Hittable\Characters\HittableCharacter.cs" />
+    <Compile Include="Hittable\HittableTarget.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Animation.cs" />
+    <Compile Include="Utilities\AnimationLoader.cs" />
+    <Compile Include="Utilities\Constants.cs" />
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\RectangleGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="FieldFighter_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Content\Bullets\Bullet.png" />
+    <Content Include="Content\Bullets\BulletGold.png" />
+    <Content Include="Content\Bullets\BulletGoldLarger.png" />
+    <Content Include="Content\Bullets\Rocket.png" />
+    <Content Include="Content\Bullets\Rocket2.png" />
+    <Content Include="Content\Bullets\SniperBullet.png" />
+    <Content Include="Content\MachineGunner\MachineGunnerLA.png" />
+    <Content Include="Content\MachineGunner\MachineGunnerLW.png" />
+    <Content Include="Content\MachineGunner\MachineGunnerRA.png" />
+    <Content Include="Content\MachineGunner\MachineGunnerRW.png" />
+    <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallLA.png" />
+    <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallLW.png" />
+    <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallRA.png" />
+    <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallRW.png" />
+    <Content Include="Content\OrangeBird\OrangeBirdLA.png" />
+    <Content Include="Content\OrangeBird\OrangeBirdLW.png" />
+    <Content Include="Content\OrangeBird\OrangeBirdRA.png" />
+    <Content Include="Content\OrangeBird\OrangeBirdRW.png" />
+    <Content Include="Content\RocketMan\RocketManLA.png" />
+    <Content Include="Content\RocketMan\RocketManLW.png" />
+    <Content Include="Content\RocketMan\RocketManRA.png" />
+    <Content Include="Content\RocketMan\RocketManRW.png" />
+    <Content Include="Content\SniperWithGillie\SniperWithGillieLA.png" />
+    <Content Include="Content\SniperWithGillie\SniperWithGillieLW.png" />
+    <Content Include="Content\SniperWithGillie\SniperWithGillieRA.png" />
+    <Content Include="Content\SniperWithGillie\SniperWithGillieRW.png" />
+    <Content Include="Content\SoldierRanged\SoldierRangedLA.png" />
+    <Content Include="Content\SoldierRanged\SoldierRangedLW.png" />
+    <Content Include="Content\SoldierRanged\SoldierRangedRA.png" />
+    <Content Include="Content\SoldierRanged\SoldierRangedRW.png" />
+    <Content Include="Content\Soldier\SoldierLA.png" />
+    <Content Include="Content\Soldier\SoldierLW.png" />
+    <Content Include="Content\Soldier\SoldierRA.png" />
+    <Content Include="Content\Soldier\SoldierRW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Pages\GamePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="..\packages\MonoGame.Binaries.3.2.0\build\netcore\MonoGame.Binaries.targets" Condition="Exists('..\packages\MonoGame.Binaries.3.2.0\build\netcore\MonoGame.Binaries.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MonoGame.Binaries.3.2.0\build\netcore\MonoGame.Binaries.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MonoGame.Binaries.3.2.0\build\netcore\MonoGame.Binaries.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
