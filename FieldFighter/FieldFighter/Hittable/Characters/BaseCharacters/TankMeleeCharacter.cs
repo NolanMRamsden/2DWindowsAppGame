@@ -9,6 +9,15 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
     class TankMeleeCharacter : GroundMeleeCharacter
     {
+        private static LoaderPackage package = new LoaderPackage()
+        {
+            sourceString = "RiotMan",
+            attackAnim = 25,
+            attackSprites = 5,
+            walkAnim = 7,
+            walkSprites = 6
+        };
+
         protected override int getAttackCount()
         {
             return base.getAttackCount()*2;
@@ -26,7 +35,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override AnimationSet getAnimSet()
         {
-            return RectangleGenerator.getRectangleAnimSet(100, 100);
+            return AnimationLoader.loadAnimation(package);
         }
 
         public override string ToString()

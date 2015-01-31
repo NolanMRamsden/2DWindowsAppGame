@@ -87,7 +87,7 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200, 300),
             left = set4,
             right = set5,
-            meleeCharacter = typeof(GroundMeleeCharacter),
+            meleeCharacter = typeof(TankMeleeCharacter),
             rangedCharacter = typeof(MachineGunCharacter),
             specialCharacter = typeof(AirMeleeCharacterPlus),
             signatureString = "Castle 1-1"

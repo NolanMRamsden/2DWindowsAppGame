@@ -173,6 +173,12 @@
     <Content Include="Content\OrangeBird\OrangeBirdLW.png" />
     <Content Include="Content\OrangeBird\OrangeBirdRA.png" />
     <Content Include="Content\OrangeBird\OrangeBirdRW.png" />
+    <Content Include="Content\RiotMan\RiotManLA.png" />
+    <Content Include="Content\RiotMan\RiotManLA2.png" />
+    <Content Include="Content\RiotMan\RiotManLW.png" />
+    <Content Include="Content\RiotMan\RiotManRA.png" />
+    <Content Include="Content\RiotMan\RiotManRA2.png" />
+    <Content Include="Content\RiotMan\RiotManRW.png" />
     <Content Include="Content\RocketMan\RocketManLA.png" />
     <Content Include="Content\RocketMan\RocketManLW.png" />
     <Content Include="Content\RocketMan\RocketManRA.png" />
