@@ -29,5 +29,10 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
         {
             return AnimationLoader.loadAnimation(package);
         }
+
+        public override string ToString()
+        {
+            return "Suicide Jacket Man";
+        }
     }
 }

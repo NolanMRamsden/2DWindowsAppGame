@@ -102,7 +102,7 @@ namespace FieldFighter.Hittable.Castles
             right = set3,
             meleeCharacter = typeof(BasicSoldier),
             rangedCharacter = typeof(GunSoldier),
-            specialCharacter = typeof(OrangeBirdSmall),
+            specialCharacter = typeof(Tank),
             signatureString = "Castle 1"
         };
 

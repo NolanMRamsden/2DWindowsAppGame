@@ -34,7 +34,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override int getMaxHealth()
         {
-            return 500;
+            return 300;
         }
 
         protected override int getWalkSpeed()

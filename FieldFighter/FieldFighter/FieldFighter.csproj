@@ -116,6 +116,7 @@
     <Compile Include="Hittable\Characters\BaseCharacters\SuicideCharacter.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\SuicideJacket.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\RiotMan.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\Tank.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\TowerMeleeCharacter.cs" />
     <Compile Include="Hittable\Elements\Bullet.cs" />
     <Compile Include="Hittable\Elements\SniperBullet.cs" />
@@ -157,6 +158,10 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Content\BasicTank\BasicTankLA.png" />
+    <Content Include="Content\BasicTank\BasicTankLW.png" />
+    <Content Include="Content\BasicTank\BasicTankRA.png" />
+    <Content Include="Content\BasicTank\BasicTankRW.png" />
     <Content Include="Content\Bullets\Bullet.png" />
     <Content Include="Content\Bullets\BulletGold.png" />
     <Content Include="Content\Bullets\BulletGoldLarger.png" />
