@@ -168,6 +168,7 @@
     <Content Include="Content\Bullets\Rocket.png" />
     <Content Include="Content\Bullets\Rocket2.png" />
     <Content Include="Content\Bullets\SniperBullet.png" />
+    <Content Include="Content\Bullets\TankBullet.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLA.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLW.png" />
     <Content Include="Content\MachineGunner\MachineGunnerRA.png" />

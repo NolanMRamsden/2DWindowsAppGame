@@ -43,4 +43,20 @@ namespace FieldFighter.Hittable.Elements
             return (1 + (int)xMagnitude);
         }
     }
+
+    class TankBullet : Bullet
+    {
+        public TankBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
+            : base(direction, startLocation, damage, target) { }
+
+        protected override Microsoft.Xna.Framework.Graphics.Texture2D getTexture()
+        {
+            return AnimationLoader.pngToTexture("Bullets/TankBullet.png");
+        }
+
+        protected override int getSpeed()
+        {
+            return 30;
+        }
+    }
 }

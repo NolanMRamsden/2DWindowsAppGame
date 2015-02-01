@@ -55,7 +55,10 @@ namespace FieldFighter.Hittable.Elements
         }
         public void draw(SpriteBatch batch)
         {
-            batch.Draw(text, new Rectangle((int)location.X, (int)location.Y, text.Width, text.Height), Color.White);
+            if(speed > 0)
+                batch.Draw(text, new Rectangle((int)location.X, (int)location.Y, text.Width, text.Height), Color.White);
+            else
+                batch.Draw(text, new Rectangle((int)location.X, (int)location.Y, text.Width, text.Height), null, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0);
         }
 
         /** movement speed of the bullet */

@@ -59,17 +59,17 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
 
         protected override CharacterBrain getBrain()
         {
-            return new RangedBrain(850,20);
+            return new RangedBrain(950,20);
         }
 
         protected override Type getProjectileType()
         {
-            return typeof(RocketBullet);
+            return typeof(TankBullet);
         }
 
         protected override int getOffSetDivisor()
         {
-            return -7;
+            return -8;
         }
 
         protected override AnimationSet getAnimSet()
