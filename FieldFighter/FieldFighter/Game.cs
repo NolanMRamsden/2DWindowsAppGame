@@ -62,9 +62,9 @@ namespace FieldFighter
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
+            env.draw(spriteBatch);
             left.draw(spriteBatch);
             right.draw(spriteBatch);
-            //env.draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }

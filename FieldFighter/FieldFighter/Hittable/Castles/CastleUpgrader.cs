@@ -97,7 +97,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set1 = new CastleUpgrader()
         {
             maxHealth = 1000,
-            texture = RectangleGenerator.filled(200,200),
+            texture = AnimationLoader.pngToTexture("Bases/TentL.png"),
             left = set2,
             right = set3,
             meleeCharacter = typeof(BasicSoldier),

@@ -161,6 +161,8 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Content\Bases\TentL.png" />
+    <Content Include="Content\Bases\TentR.png" />
     <Content Include="Content\BasicTank\BasicTankLA.png" />
     <Content Include="Content\BasicTank\BasicTankLW.png" />
     <Content Include="Content\BasicTank\BasicTankRA.png" />
@@ -174,6 +176,11 @@
     <Content Include="Content\Bullets\SniperBullet.png" />
     <Content Include="Content\Bullets\TankBullet.png" />
     <Content Include="Content\Bullets\TargetMarker.png" />
+    <Content Include="Content\Environment\grassFlat.jpg" />
+    <Content Include="Content\Environment\grassUp.png" />
+    <Content Include="Content\Environment\sand.png" />
+    <Content Include="Content\Environment\Tree1.png" />
+    <Content Include="Content\Environment\Tree2.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLA.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLW.png" />
     <Content Include="Content\MachineGunner\MachineGunnerRA.png" />

@@ -126,7 +126,10 @@ namespace FieldFighter.Hittable
         public override void draw(SpriteBatch batch)
         {
             base.draw(batch);
-            batch.Draw(castleTexture, getLocation(), Color.White);
+            if(facing == CharacterEnums.EDirection.RIGHT)
+                batch.Draw(castleTexture, getLocation(), null, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0);
+            else
+                batch.Draw(castleTexture, getLocation(), Color.White);
 
             foreach (HittableCharacter c in characters)
                 c.draw(batch);
