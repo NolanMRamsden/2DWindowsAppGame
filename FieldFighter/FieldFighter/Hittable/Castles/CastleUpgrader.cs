@@ -62,7 +62,7 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 2500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(BasicSoldierPlus),
+            meleeCharacter = typeof(Tank),
             rangedCharacter = typeof(MachineGunCharacter),
             specialCharacter = typeof(TowerMeleeCharacter),
             signatureString = "Castle 1-1-1"
@@ -101,8 +101,8 @@ namespace FieldFighter.Hittable.Castles
             left = set2,
             right = set3,
             meleeCharacter = typeof(BasicSoldier),
-            rangedCharacter = typeof(GunSoldier),
-            specialCharacter = typeof(Tank),
+            rangedCharacter = typeof(PhoneGuy),
+            specialCharacter = typeof(OrangeBirdSmall),
             signatureString = "Castle 1"
         };
 

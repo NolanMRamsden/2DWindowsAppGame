@@ -15,7 +15,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
     {
         public RangedCharacter() : base() { }
 
-        protected List<Bullet> projectiles = new List<Bullet>();
+        protected List<Projectile> projectiles = new List<Projectile>();
 
         public override void update(HittableTarget groundTarget, HittableTarget airTarget)
         {
@@ -26,7 +26,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         public override void draw(SpriteBatch batch)
         {
-            foreach (Bullet b in projectiles)
+            foreach (Projectile b in projectiles)
                 b.draw(batch);
             base.draw(batch);
         }
@@ -50,7 +50,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
                         Rectangle r = getLocation();
                         int bulletHeight = (int)(r.Center.Y + r.Height / getOffSetDivisor());
                         Logger.d(ToString() + " attacked " + target.ToString() + "(Ranged " + getRangedDamage() + " dmg)");
-                        projectiles.Add((Bullet)Activator.CreateInstance(getProjectileType(), 
+                        projectiles.Add((Projectile)Activator.CreateInstance(getProjectileType(), 
                                          new object[]{facing,new Vector2(getFrontLocationX(), bulletHeight),
                                          getRangedDamage(),target}));
                     }

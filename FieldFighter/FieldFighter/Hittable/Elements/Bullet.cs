@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Elements
 {
-    class Bullet
+    class Bullet : Projectile
     {
         private Texture2D text;
         private Vector2 location;
@@ -19,6 +19,7 @@ namespace FieldFighter.Hittable.Elements
         private int speed;
 
         public Bullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
+             : base(direction,startLocation,damage,target)
         {
             location = startLocation;
             this.target = target;
@@ -31,7 +32,7 @@ namespace FieldFighter.Hittable.Elements
         }
         
         /** returns true when hit payload */
-        public Boolean update()
+        public override Boolean update()
         {
             if (moving == CharacterEnums.EDirection.LEFT)
             {
@@ -53,7 +54,7 @@ namespace FieldFighter.Hittable.Elements
             }
             return false;
         }
-        public void draw(SpriteBatch batch)
+        public override void draw(SpriteBatch batch)
         {
             if(speed > 0)
                 batch.Draw(text, new Rectangle((int)location.X, (int)location.Y, text.Width, text.Height), Color.White);
@@ -70,7 +71,6 @@ namespace FieldFighter.Hittable.Elements
         protected virtual Texture2D getTexture()
         {
             return AnimationLoader.pngToTexture("Bullets/BulletGoldLarger.png");
-            return RectangleGenerator.filled(10, 10);
         }
     }
 }

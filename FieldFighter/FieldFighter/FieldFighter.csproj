@@ -112,13 +112,16 @@
     <Compile Include="Game.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\MeleeCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\RangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\PhoneGuy.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\SniperCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\SuicideCharacter.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\SuicideJacket.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\RiotMan.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\Tank.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\TowerMeleeCharacter.cs" />
+    <Compile Include="Hittable\Elements\AirStrike.cs" />
     <Compile Include="Hittable\Elements\Bullet.cs" />
+    <Compile Include="Hittable\Elements\Projectile.cs" />
     <Compile Include="Hittable\Elements\SniperBullet.cs" />
     <Compile Include="Pages\GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
@@ -162,6 +165,7 @@
     <Content Include="Content\BasicTank\BasicTankLW.png" />
     <Content Include="Content\BasicTank\BasicTankRA.png" />
     <Content Include="Content\BasicTank\BasicTankRW.png" />
+    <Content Include="Content\Bullets\AirstrikeRocket.png" />
     <Content Include="Content\Bullets\Bullet.png" />
     <Content Include="Content\Bullets\BulletGold.png" />
     <Content Include="Content\Bullets\BulletGoldLarger.png" />
@@ -169,6 +173,7 @@
     <Content Include="Content\Bullets\Rocket2.png" />
     <Content Include="Content\Bullets\SniperBullet.png" />
     <Content Include="Content\Bullets\TankBullet.png" />
+    <Content Include="Content\Bullets\TargetMarker.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLA.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLW.png" />
     <Content Include="Content\MachineGunner\MachineGunnerRA.png" />
@@ -181,6 +186,10 @@
     <Content Include="Content\OrangeBird\OrangeBirdLW.png" />
     <Content Include="Content\OrangeBird\OrangeBirdRA.png" />
     <Content Include="Content\OrangeBird\OrangeBirdRW.png" />
+    <Content Include="Content\PhoneGuy\PhoneGuyLA.png" />
+    <Content Include="Content\PhoneGuy\PhoneGuyLW.png" />
+    <Content Include="Content\PhoneGuy\PhoneGuyRA.png" />
+    <Content Include="Content\PhoneGuy\PhoneGuyRW.png" />
     <Content Include="Content\RiotMan\RiotManLA.png" />
     <Content Include="Content\RiotMan\RiotManLA2.png" />
     <Content Include="Content\RiotMan\RiotManLW.png" />
