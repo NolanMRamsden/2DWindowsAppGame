@@ -1,5 +1,6 @@
 ﻿using FieldFighter.Hittable;
 using FieldFighter.Hittable.Castles;
+using FieldFighter.Hittable.Characters.BaseCharacters;
 using FieldFighter.Hittable.Elements;
 using FieldFighter.Utilities;
 using Microsoft.Xna.Framework;
@@ -14,12 +15,14 @@ namespace FieldFighter.Hittable
 {
     public class Castle : HittableTarget
     {
+        const int TurretOffset = 100;
         /** broadcast the targets for opposing enemies */
         public HittableTarget airFrontTarget;
         public HittableTarget groundFrontTarget;
 
         protected CastleUpgrader upgrader;
         protected List<HittableCharacter> characters = new List<HittableCharacter>();
+        protected TurretCharacter turret;
         protected Texture2D castleTexture;
         protected int xCoordinate;
 
@@ -51,6 +54,21 @@ namespace FieldFighter.Hittable
         {
             spawn(upgrader.spawn(type));
         }
+        public void spawnTurret(TurretCharacter t)
+        {
+            this.turret = t;
+            int turretLocation = getFrontLocationX();
+            if (facing == CharacterEnums.EDirection.RIGHT)
+            {
+                turretLocation += TurretOffset;                
+            } else
+            {
+                turretLocation -= TurretOffset;
+            }
+
+            turret.spawn(turretLocation, facing);
+
+        }
         private void spawn(HittableCharacter c)
         {
             if(getMoney() - c.getSpawnCost() < 0)
@@ -72,6 +90,11 @@ namespace FieldFighter.Hittable
         {
             upgrade(upgrader.left);
         }
+
+        public void buyTurret()
+        {
+            spawnTurret(new BasicTurret());
+        }
         public void upgradeRight()
         {
             upgrade(upgrader.right);
@@ -90,6 +113,10 @@ namespace FieldFighter.Hittable
         /** updates the front target and held characters */
         public void updateCharacters(Castle enemyCastle)
         {
+            if(turret != null)
+            {
+                turret.update(enemyCastle.groundFrontTarget, enemyCastle.airFrontTarget);
+            }
             money += Constants.moneyEarnRate;
             groundFrontTarget = this;
             airFrontTarget = this;
@@ -125,6 +152,7 @@ namespace FieldFighter.Hittable
         /** draws castle as well as its characters, calls base to get healthbar */
         public override void draw(SpriteBatch batch)
         {
+            
             base.draw(batch);
             if(facing == CharacterEnums.EDirection.RIGHT)
                 batch.Draw(castleTexture, getLocation(), null, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0);
@@ -138,6 +166,10 @@ namespace FieldFighter.Hittable
                 groundFrontTarget.draw(batch);
             if(this != airFrontTarget)
                 airFrontTarget.draw(batch);
+            if (turret != null)
+            {
+                turret.draw(batch);
+            }
         }
 
         /** occupied space */

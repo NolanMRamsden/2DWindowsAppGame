@@ -112,6 +112,10 @@
     <Compile Include="Game.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\MeleeCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\RangedCharacter.cs" />
+    <Compile Include="Hittable\Characters\BaseCharacters\TurretCharacter.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\TankTurret.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\MachineTurret.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\BasicTurret.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\PhoneGuy.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\SniperCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\SuicideCharacter.cs" />

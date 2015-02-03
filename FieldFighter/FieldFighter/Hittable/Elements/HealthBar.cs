@@ -91,6 +91,10 @@ namespace FieldFighter.Hittable.Elements
         public override void draw(SpriteBatch batch, Rectangle rect)
         {
             int height1, height2;
+            if(location == ELocation.INVISIBLE)
+            {
+                return;
+            }
             if(location == ELocation.TOP)
             {
                 height1 = rect.Top - vertOffset;
@@ -137,6 +141,6 @@ namespace FieldFighter.Hittable.Elements
 
     public enum ELocation
     {
-        TOP, BOTTOM, LEFT, RIGHT 
+        TOP, BOTTOM, LEFT, RIGHT, INVISIBLE
     }
 }

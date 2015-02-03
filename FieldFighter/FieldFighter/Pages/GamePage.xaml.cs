@@ -47,6 +47,10 @@ namespace FieldFighter
         {
             _game.right.upgradeRight();
         }
+        private void Button_Tapped_RightTurret(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            _game.right.spawnTurret(new BasicTurret());
+        }
 
         private void Button_Tapped_5(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
@@ -71,6 +75,11 @@ namespace FieldFighter
         private void Button_Tapped_8R(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
             _game.left.upgradeRight();
+        }
+
+        private void Button_Tapped_LeftTurret(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            _game.left.spawnTurret(new BasicTurret());
         }
     }
 }

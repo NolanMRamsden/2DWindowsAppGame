@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
     /** altered character class that usees projectiles at a certain range */
-    abstract class RangedCharacter : HittableCharacter
+    public abstract class RangedCharacter : HittableCharacter
     {
         public RangedCharacter() : base() { }
 
