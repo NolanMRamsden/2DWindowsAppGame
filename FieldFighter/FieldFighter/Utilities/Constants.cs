@@ -20,7 +20,7 @@ namespace FieldFighter.Utilities
         public static int leftBaseX;
         public static int rightBaseX;
         
-        public const int startingMoney = 10000;
+        public const int startingMoney = 500;
 
         public const double upgradeHealthBoost = .10;
 

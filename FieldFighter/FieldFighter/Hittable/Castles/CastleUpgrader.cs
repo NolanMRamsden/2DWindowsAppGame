@@ -28,7 +28,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set7 = new CastleUpgrader()
         {
             maxHealth = 3500,
-            upgradeCost = 5000,
+            upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(SuicideJacket),
@@ -40,7 +40,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set6 = new CastleUpgrader()
         {
             maxHealth = 3000,
-            upgradeCost = 5000,
+            upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(GunSoldierPlus),
@@ -52,7 +52,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set5 = new CastleUpgrader()
         {
             maxHealth = 2500,
-            upgradeCost = 5000,
+            upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
@@ -64,7 +64,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set4 = new CastleUpgrader()
         {
             maxHealth = 2500,
-            upgradeCost = 5000,
+            upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
@@ -76,12 +76,12 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set3 = new CastleUpgrader()
         {
             maxHealth = 2000,
-            upgradeCost = 5000,
+            upgradeCost = 1000,
             texture = RectangleGenerator.filled(200, 300),
             left = set6,
             right = set7,
             turret = typeof(MachineTurret),
-            meleeCharacter = typeof(BasicSoldierPlus),
+            meleeCharacter = typeof(FlameThrower),
             rangedCharacter = typeof(SniperCharacter),
             specialCharacter = typeof(PhoneGuyLazor),
             signatureString = "Castle 1-2"
@@ -108,7 +108,7 @@ namespace FieldFighter.Hittable.Castles
             left = set2,
             right = set3,
             turret = typeof(MachineTurret),
-            meleeCharacter = typeof(FlameThrower),
+            meleeCharacter = typeof(BasicSoldier),
             rangedCharacter = typeof(GunSoldier),
             specialCharacter = typeof(OrangeBirdSmall),
             signatureString = "Castle 1"
