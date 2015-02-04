@@ -180,7 +180,7 @@ namespace FieldFighter.Hittable
         /** determines the init health of castle */
         public virtual int getMaxHealth()
         {
-            return 1000;
+            return 5000;
         }
 
         /** draws castle as well as its characters, calls base to get healthbar */

@@ -27,7 +27,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set7 = new CastleUpgrader()
         {
-            maxHealth = 3500,
+            maxHealth = 1000,
             upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
@@ -39,7 +39,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set6 = new CastleUpgrader()
         {
-            maxHealth = 3000,
+            maxHealth = 1000,
             upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
@@ -51,7 +51,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set5 = new CastleUpgrader()
         {
-            maxHealth = 2500,
+            maxHealth = 1000,
             upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
@@ -63,7 +63,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set4 = new CastleUpgrader()
         {
-            maxHealth = 2500,
+            maxHealth = 1000,
             upgradeCost = 2000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
@@ -75,7 +75,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set3 = new CastleUpgrader()
         {
-            maxHealth = 2000,
+            maxHealth = 8000,
             upgradeCost = 1000,
             texture = RectangleGenerator.filled(200, 300),
             left = set6,
@@ -89,7 +89,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set2 = new CastleUpgrader()
         {
-            maxHealth = 1500,
+            maxHealth = 7500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 300),
             left = set4,
@@ -103,7 +103,7 @@ namespace FieldFighter.Hittable.Castles
 
         public static CastleUpgrader set1 = new CastleUpgrader()
         {
-            maxHealth = 1000,
+            maxHealth = 5000,
             texture = AnimationLoader.pngToTexture("Bases/TentL.png"),
             left = set2,
             right = set3,
