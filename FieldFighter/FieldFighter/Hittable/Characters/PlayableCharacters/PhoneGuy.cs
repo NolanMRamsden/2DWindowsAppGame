@@ -29,7 +29,7 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
 
         public override string ToString()
         {
-            return "Phone Guy";
+            return "Phone Guy Rocket";
         }
 
         protected override Type getProjectileType()
@@ -54,7 +54,7 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
 
         protected override int getRangedDamage()
         {
-            return 1000;
+            return 500;
         }
 
         protected override int getAttackCount()
@@ -70,6 +70,22 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
         protected override AnimationSet getAnimSet()
         {
             return AnimationLoader.loadAnimation(package);
+        }
+    }
+
+    class PhoneGuyLazor : PhoneGuy
+    {
+        public override string ToString()
+        {
+            return "Phone Guy Lazor";
+        }
+        protected override Type getProjectileType()
+        {
+            return typeof(SateliteStrike);
+        }
+        protected override int getAttackCount()
+        {
+            return 500;
         }
     }
 }

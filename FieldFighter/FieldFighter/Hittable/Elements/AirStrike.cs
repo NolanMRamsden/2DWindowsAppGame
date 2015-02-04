@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Elements
 {
-    class AirStrike : Projectile
+    public class AirStrike : Projectile
     {
-        HittableTarget target;
-        Texture2D targetMarker;
-        Texture2D payload;
-        int damage;
-        int projectileY = -50;
-        int finalDestination;
+        protected HittableTarget target;
+        protected Texture2D targetMarker;
+        protected Texture2D payload;
+        protected int damage;
+        
+        private int projectileY = -50;
+        private int finalDestination;
         public AirStrike(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
              : base(direction,startLocation,damage,target)
         {
@@ -60,6 +61,38 @@ namespace FieldFighter.Hittable.Elements
             int distance = (r.Width)-(projectileY - finalDestination)/6;
             batch.Draw(targetMarker, new Rectangle( r.Center.X-distance/2,r.Bottom-distance/12,distance  ,distance/6), Color.White);
             batch.Draw(payload, new Rectangle((int)(r.Center.X - payload.Width / 2), projectileY, payload.Width, payload.Height), Color.White);
+        }
+    }
+
+    public class SateliteStrike : AirStrike
+    {
+        const int widthFactor = 8;
+
+        public SateliteStrike(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
+             : base(direction,startLocation,damage,target)
+        {}
+
+        public override Texture2D getPayload()
+        {
+            return AnimationLoader.pngToTexture("Bullets/Lazer.png");
+        }
+
+        public override bool update()
+        {
+            int damageNow = damage - 5;
+            if (damageNow < 0)
+                return true;
+            target.getHit(5);
+            damage = damageNow;
+            return false;
+        }
+
+        public override void draw(SpriteBatch batch)
+        {
+            Rectangle r = target.getLocation();
+            int width = (int)Math.Sqrt(damage*widthFactor);
+            batch.Draw(targetMarker, new Rectangle( r.Center.X-r.Width/2,r.Bottom-r.Width/12,r.Width  ,r.Width/6), Color.White);
+            batch.Draw(payload, new Rectangle(r.Center.X - width / 2, 0, width, r.Bottom), Color.White);
         }
     }
 }

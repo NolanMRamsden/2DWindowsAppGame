@@ -177,6 +177,7 @@
     <Content Include="Content\Bullets\Bullet.png" />
     <Content Include="Content\Bullets\BulletGold.png" />
     <Content Include="Content\Bullets\BulletGoldLarger.png" />
+    <Content Include="Content\Bullets\Lazer.png" />
     <Content Include="Content\Bullets\Rocket.png" />
     <Content Include="Content\Bullets\Rocket2.png" />
     <Content Include="Content\Bullets\SniperBullet.png" />
