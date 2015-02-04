@@ -42,7 +42,7 @@ namespace FieldFighter
             Constants.setConstants(Window.ClientBounds);
             left = new Castle(CharacterEnums.EDirection.RIGHT, Constants.leftBaseX);
             right = new Castle(CharacterEnums.EDirection.LEFT, Constants.rightBaseX);
-            env = new GameEnviroment(Window.ClientBounds);   
+            env = new GameEnviroment(Window.ClientBounds,left,right);   
         }
 
         protected override void UnloadContent()

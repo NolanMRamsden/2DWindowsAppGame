@@ -20,7 +20,7 @@ namespace FieldFighter.Hittable
 
         protected CastleUpgrader upgrader;
         protected List<HittableCharacter> characters = new List<HittableCharacter>();
-        protected Texture2D castleTexture;
+        public Texture2D castleTexture;
         protected int xCoordinate;
 
         private double money = Constants.startingMoney;

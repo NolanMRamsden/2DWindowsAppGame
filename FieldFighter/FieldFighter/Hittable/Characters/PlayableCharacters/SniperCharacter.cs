@@ -157,6 +157,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             return AnimationLoader.loadAnimation(package);
         }
 
+        protected override Type getProjectileType()
+        {
+            return typeof(Bullet);
+        }
+
         protected override int getOffSetDivisor()
         {
             high = !high;

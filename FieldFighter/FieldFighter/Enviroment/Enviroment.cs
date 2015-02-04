@@ -1,4 +1,5 @@
-﻿using FieldFighter.Utilities;
+﻿using FieldFighter.Hittable;
+using FieldFighter.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -13,10 +14,12 @@ namespace FieldFighter.Enviroment
     {
         private Sky sky;
         private Ground ground;
+        private Board b;
 
-        public GameEnviroment(Rectangle screenBounds)
+        public GameEnviroment(Rectangle screenBounds, Castle leftCastle, Castle rightCastle)
         {
             ground = new Ground(Constants.groundHeight, screenBounds.Width, screenBounds.Height);
+            b = new Board(leftCastle, new Point(10, 10));
         }
 
         public override void update()
@@ -27,6 +30,7 @@ namespace FieldFighter.Enviroment
         public override void draw(SpriteBatch batch)
         {
             ground.draw(batch);
+            b.draw(batch);
         }
     }
 

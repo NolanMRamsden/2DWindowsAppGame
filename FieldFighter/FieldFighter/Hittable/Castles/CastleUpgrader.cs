@@ -31,7 +31,7 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200, 400),
             meleeCharacter = typeof(SuicideJacket),
             rangedCharacter = typeof(SniperCharacter),
-            specialCharacter = typeof(OrangeBirdSmall),
+            specialCharacter = typeof(Tank),
             signatureString = "Castle 1-2-2"
         };
 
@@ -40,9 +40,9 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 3000,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(BasicSoldierPlus),
+            meleeCharacter = typeof(GunSoldierPlus),
             rangedCharacter = typeof(RocketLauncherCharacter),
-            specialCharacter = typeof(OrangeBird),
+            specialCharacter = typeof(Tank),
             signatureString = "Castle 1-2-1"
         };
 
@@ -52,8 +52,8 @@ namespace FieldFighter.Hittable.Castles
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
             meleeCharacter = typeof(RiotMan),
-            rangedCharacter = typeof(GunSoldierPlus),
-            specialCharacter = typeof(OrangeBird),
+            rangedCharacter = typeof(PhoneGuy),
+            specialCharacter = typeof(Tank),
             signatureString = "Castle 1-1-2"
         };
 
@@ -62,9 +62,9 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 2500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
-            meleeCharacter = typeof(Tank),
+            meleeCharacter = typeof(RiotMan),
             rangedCharacter = typeof(MachineGunCharacter),
-            specialCharacter = typeof(TowerMeleeCharacter),
+            specialCharacter = typeof(Tank),
             signatureString = "Castle 1-1-1"
         };
 
@@ -101,7 +101,7 @@ namespace FieldFighter.Hittable.Castles
             left = set2,
             right = set3,
             meleeCharacter = typeof(BasicSoldier),
-            rangedCharacter = typeof(PhoneGuy),
+            rangedCharacter = typeof(GunSoldier),
             specialCharacter = typeof(OrangeBirdSmall),
             signatureString = "Castle 1"
         };

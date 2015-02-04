@@ -30,6 +30,11 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
             return AnimationLoader.loadAnimation(package);
         }
 
+        protected override int getWalkSpeed()
+        {
+            return 10;
+        }
+
         public override string ToString()
         {
             return "Suicide Jacket Man";

@@ -106,6 +106,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Enviroment\Board.cs" />
     <Compile Include="Enviroment\Enviroment.cs" />
     <Compile Include="Enviroment\Ground.cs" />
     <Compile Include="Enviroment\Sky.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="Utilities\AnimationLoader.cs" />
     <Compile Include="Utilities\Constants.cs" />
     <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\NumberDrawer.cs" />
     <Compile Include="Utilities\RectangleGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +181,7 @@
     <Content Include="Content\Environment\grassFlat.jpg" />
     <Content Include="Content\Environment\grassUp.png" />
     <Content Include="Content\Environment\sand.png" />
+    <Content Include="Content\Environment\ScoreFrame.png" />
     <Content Include="Content\Environment\Tree1.png" />
     <Content Include="Content\Environment\Tree2.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLA.png" />
