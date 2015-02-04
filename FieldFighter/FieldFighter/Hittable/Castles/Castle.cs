@@ -158,6 +158,7 @@ namespace FieldFighter.Hittable
                 {
                     enemyCastle.pay(characters[i].getSpawnCost() / 2);
                     characters.RemoveAt(i);
+                    characterTotals.sub(characters[i].spawnAttribute);
                 }
                 else
                 {
