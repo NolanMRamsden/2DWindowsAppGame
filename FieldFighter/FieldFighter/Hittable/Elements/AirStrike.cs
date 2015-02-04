@@ -14,15 +14,17 @@ namespace FieldFighter.Hittable.Elements
         protected HittableTarget target;
         protected Texture2D targetMarker;
         protected Texture2D payload;
+        protected Castle enemyCastle;
         protected int damage;
         
         private int projectileY = -50;
         private int finalDestination;
-        public AirStrike(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
-             : base(direction,startLocation,damage,target)
+        public AirStrike(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
+             : base(direction,startLocation,damage,target, enemyCastle)
         {
             this.target = target;
             this.damage = damage;
+            this.enemyCastle = enemyCastle;
             targetMarker = getTargetMarker();
             payload = getPayload();
             if (target.myType == CharacterEnums.EType.AIR)
@@ -49,7 +51,7 @@ namespace FieldFighter.Hittable.Elements
 
             if (projectileY + 100 >= finalDestination)
             {
-                target.getHit(damage);
+                enemyCastle.hitForSplash(damage, 125, target.myType);
                 return true;
             }
             return false;
@@ -68,8 +70,8 @@ namespace FieldFighter.Hittable.Elements
     {
         const int widthFactor = 8;
 
-        public SateliteStrike(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
-             : base(direction,startLocation,damage,target)
+        public SateliteStrike(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
+             : base(direction,startLocation,damage,target,enemyCastle)
         {}
 
         public override Texture2D getPayload()

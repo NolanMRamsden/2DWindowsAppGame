@@ -10,7 +10,7 @@ namespace FieldFighter.Hittable.Elements
 {
     public abstract class Projectile
     {
-        public Projectile(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target) { }
+        public Projectile(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle) { }
         public abstract Boolean update();
         public abstract void draw(SpriteBatch batch);
     }

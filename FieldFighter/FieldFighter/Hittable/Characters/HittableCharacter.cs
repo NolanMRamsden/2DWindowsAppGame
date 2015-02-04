@@ -18,12 +18,14 @@ namespace FieldFighter.Hittable
 
         protected CharacterBrain brain;
         protected AnimationSet animSet;
+        private int splashRange;
 
         /** assign logic and init health */
         public HittableCharacter()
         {
             brain = getBrain();
             animSet = getAnimSet();
+            splashRange = getSplashRange();
             healthBar = new HorizontalHealthBar(getHealthBarLocation());
             healthBar.setNew(getMaxHealth());
         }
@@ -39,7 +41,11 @@ namespace FieldFighter.Hittable
             else
                 this.xCoordinate = xCo;
         }
-
+        
+        protected virtual int getSplashRange()
+        {
+            return 0;
+        }
         /** handles delegation of charater actions based on assigned brain logic **/
         protected virtual CharacterBrain getBrain()
         {
@@ -62,10 +68,10 @@ namespace FieldFighter.Hittable
                     walkBackward();
                     break;
                 case CharacterEnums.ECharacterAction.MELEEATTACK:
-                    attackTop(brain.myTarget, true);
+                    attackTop(brain.myTarget, true, enemy);
                     break;
                 case CharacterEnums.ECharacterAction.RANGEATTACK:
-                    attackTop(brain.myTarget, false);
+                    attackTop(brain.myTarget, false, enemy);
                     break;
             }
             animSet.currentAnimation.Update();
@@ -119,7 +125,7 @@ namespace FieldFighter.Hittable
 
         /** handles air and ground unit filtering and attack pacing */
         protected int attackCounter = 0;
-        private void attackTop(HittableTarget target, Boolean isMelee)
+        private void attackTop(HittableTarget target, Boolean isMelee, Castle enemy)
         {
             if (facing == CharacterEnums.EDirection.RIGHT)
             {
@@ -135,9 +141,9 @@ namespace FieldFighter.Hittable
                 else
                     animSet.currentAnimation = animSet.leftAttackRange;
             }
-            attack(target, isMelee);
+            attack(target, isMelee, enemy);
         }
-        protected virtual void attack(HittableTarget target, Boolean isMelee)
+        protected virtual void attack(HittableTarget target, Boolean isMelee, Castle enemy)
         {
             if (canAttackType == CharacterEnums.EType.BOTH || canAttackType == target.myType || target.myType == CharacterEnums.EType.BOTH)
             {
@@ -148,12 +154,26 @@ namespace FieldFighter.Hittable
                     if (isMelee)
                     {
                         Logger.d(ToString() + " attacked " + target.ToString() + "(Melee " + getMeleeDamage() + " dmg)");
-                        target.getHit(getMeleeDamage());
+                        if (splashRange == 0)
+                        {
+                            target.getHit(getMeleeDamage());
+                        }
+                        else
+                        {
+                            enemy.hitForSplash(getMeleeDamage(), splashRange, canAttackType);
+                        }
                     }
                     else
                     {
                         Logger.d(ToString() + " attacked " + target.ToString() + "(Ranged "+getRangedDamage() + " dmg)");
-                        target.getHit(getRangedDamage());
+                        if (splashRange == 0)
+                        {
+                            target.getHit(getRangedDamage());
+                        }
+                        else
+                        {
+                            enemy.hitForSplash(getRangedDamage(), splashRange, canAttackType);
+                        }
                     }
                 }
             }

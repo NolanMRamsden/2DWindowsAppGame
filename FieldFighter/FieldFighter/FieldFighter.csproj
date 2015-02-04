@@ -114,6 +114,7 @@
     <Compile Include="Hittable\Characters\BaseCharacters\MeleeCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\RangedCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\TurretCharacter.cs" />
+    <Compile Include="Hittable\Characters\PlayableCharacters\FlameThrower.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\Turrets\TankTurret.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\Turrets\MachineTurret.cs" />
     <Compile Include="Hittable\Characters\PlayableCharacters\Turrets\BasicTurret.cs" />
@@ -189,6 +190,10 @@
     <Content Include="Content\Environment\ScoreFrame.png" />
     <Content Include="Content\Environment\Tree1.png" />
     <Content Include="Content\Environment\Tree2.png" />
+    <Content Include="Content\FlameThrower\FlameThrowerLA.png" />
+    <Content Include="Content\FlameThrower\FlameThrowerLW.png" />
+    <Content Include="Content\FlameThrower\FlameThrowerRA.png" />
+    <Content Include="Content\FlameThrower\FlameThrowerRW.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLA.png" />
     <Content Include="Content\MachineGunner\MachineGunnerLW.png" />
     <Content Include="Content\MachineGunner\MachineGunnerRA.png" />

@@ -36,7 +36,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         }
 
         /** altered attack method to kill themself on attack */
-        protected override void attack(HittableTarget target, Boolean isMelee)
+        protected override void attack(HittableTarget target, Boolean isMelee, Castle enemy)
         {
             if (canAttackType == CharacterEnums.EType.BOTH || canAttackType == target.myType || target.myType == CharacterEnums.EType.BOTH)
             {

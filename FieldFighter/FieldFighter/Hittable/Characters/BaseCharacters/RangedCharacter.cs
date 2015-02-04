@@ -22,7 +22,10 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             HittableTarget groundTarget = enemy.groundFrontTarget;
             HittableTarget airTarget = enemy.airFrontTarget;
             for (int i = 0; i < projectiles.Count; i++)
-                if (projectiles[i].update()) projectiles.RemoveAt(i);
+                if (projectiles[i].update())
+                {
+                    projectiles.RemoveAt(i);
+                }
             base.update(enemy);
         }
 
@@ -34,7 +37,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         }
 
         /** altered attack method to spawn projectiles on ranged attack */
-        protected override void attack(HittableTarget target, Boolean isMelee)
+        protected override void attack(HittableTarget target, Boolean isMelee, Castle enemy)
         {
             if (canAttackType == CharacterEnums.EType.BOTH || canAttackType == target.myType || target.myType == CharacterEnums.EType.BOTH)
             {
@@ -55,11 +58,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
                         if(getFrontLocationX() > target.getFrontLocationX())
                             projectiles.Add((Projectile)Activator.CreateInstance(getProjectileType(), 
                                          new object[]{CharacterEnums.EDirection.LEFT,new Vector2(getFrontLocationX(), bulletHeight),
-                                         getRangedDamage(),target}));
+                                         getRangedDamage(),target,enemy}));
                         else
                             projectiles.Add((Projectile)Activator.CreateInstance(getProjectileType(),
                                          new object[]{CharacterEnums.EDirection.RIGHT,new Vector2(getFrontLocationX(), bulletHeight),
-                                         getRangedDamage(),target}));
+                                         getRangedDamage(),target,enemy}));
                     }
                 }
             }

@@ -13,24 +13,31 @@ namespace FieldFighter.Hittable.Elements
     {
         private Texture2D text;
         private Vector2 location;
-        private HittableTarget target;
+        protected HittableTarget target;
         private CharacterEnums.EDirection moving;
-        private int damage;
+        protected Castle enemyCastle;
+        protected int damage;
         private int speed;
 
-        public Bullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
-             : base(direction,startLocation,damage,target)
+        public Bullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
+             : base(direction,startLocation,damage,target, enemyCastle)
         {
             location = startLocation;
             this.target = target;
             this.damage = damage;
             this.speed = getSpeed();
             this.moving = direction;
+            this.enemyCastle = enemyCastle;
             if (moving == CharacterEnums.EDirection.LEFT)
                 this.speed *= -1;
             text = getTexture();
         }
         
+        protected virtual void hitTarget()
+        {
+             target.getHit(damage);
+        }
+
         /** returns true when hit payload */
         public override Boolean update()
         {
@@ -39,7 +46,7 @@ namespace FieldFighter.Hittable.Elements
                 location.X -= getSpeed();
                 if (location.X <= target.getFrontLocationX())
                 {
-                    target.getHit(damage);
+                    hitTarget();
                     return true;
                 }
             }
@@ -48,7 +55,7 @@ namespace FieldFighter.Hittable.Elements
                 location.X += getSpeed();
                 if (location.X >= target.getFrontLocationX())
                 {
-                    target.getHit(damage);
+                    hitTarget();
                     return true;
                 }
             }

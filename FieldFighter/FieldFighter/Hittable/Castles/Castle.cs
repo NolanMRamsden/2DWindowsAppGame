@@ -100,6 +100,39 @@ namespace FieldFighter.Hittable
         {
             return (int)money;
         }
+
+        public void hitForSplash(int damage, int range, FieldFighter.Hittable.CharacterEnums.EType type)
+        {
+            if (type == CharacterEnums.EType.GROUND)
+            {
+                foreach (HittableCharacter c in characters)
+                {
+                    if ((c.myType == CharacterEnums.EType.GROUND || c.myType == CharacterEnums.EType.BOTH)
+                            && withinRange(c, groundFrontTarget, range))
+                        c.getHit(damage);
+                }
+                if (withinRange(this, groundFrontTarget, range))
+                    this.getHit(damage);
+            }
+            else
+            {
+                foreach (HittableCharacter c in characters)
+                {
+                    if ((c.myType == CharacterEnums.EType.AIR || c.myType == CharacterEnums.EType.BOTH)
+                            && withinRange(c, airFrontTarget, range))
+                        c.getHit(damage);
+                }
+                if (withinRange(this, airFrontTarget, range))
+                    this.getHit(damage);
+            }
+            
+
+        }
+        private Boolean withinRange(HittableTarget target, HittableTarget rangeof, int range)
+        {
+            return (Math.Abs(target.getFrontLocationX() - rangeof.getFrontLocationX()) < range);
+        }
+
         /** method for enemyCastle to pay out when a character dies, needs to be done better */
         public void pay(int amount)
         {

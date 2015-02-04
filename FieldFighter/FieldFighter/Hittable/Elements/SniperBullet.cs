@@ -10,8 +10,8 @@ namespace FieldFighter.Hittable.Elements
 {
     class SniperBullet : Bullet
     {
-        public SniperBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
-            : base(direction, startLocation, damage, target) { }
+        public SniperBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
+            : base(direction, startLocation, damage, target, enemyCastle) { }
 
         protected override Microsoft.Xna.Framework.Graphics.Texture2D getTexture()
         {
@@ -26,8 +26,10 @@ namespace FieldFighter.Hittable.Elements
 
     class RocketBullet : Bullet
     {
-        public RocketBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
-            : base(direction, startLocation, damage, target) { }
+        const int splashRange = 100;
+
+        public RocketBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
+            : base(direction, startLocation, damage, target, enemyCastle) { }
 
         private double xMagnitude = 0;
         private double xAccel = 1.65;
@@ -35,6 +37,11 @@ namespace FieldFighter.Hittable.Elements
         protected override Microsoft.Xna.Framework.Graphics.Texture2D getTexture()
         {
             return AnimationLoader.pngToTexture("Bullets/Rocket2.png");
+        }
+
+        protected override void hitTarget()
+        {
+            enemyCastle.hitForSplash(damage, splashRange, target.myType);
         }
 
         protected override int getSpeed()
@@ -46,12 +53,19 @@ namespace FieldFighter.Hittable.Elements
 
     class TankBullet : Bullet
     {
-        public TankBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target)
-            : base(direction, startLocation, damage, target) { }
+        const int splashRange = 50;
+
+        public TankBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
+            : base(direction, startLocation, damage, target, enemyCastle) { }
 
         protected override Microsoft.Xna.Framework.Graphics.Texture2D getTexture()
         {
             return AnimationLoader.pngToTexture("Bullets/TankBullet.png");
+        }
+
+        protected override void hitTarget()
+        {
+            enemyCastle.hitForSplash(damage, splashRange, target.myType);
         }
 
         protected override int getSpeed()
