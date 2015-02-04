@@ -192,6 +192,7 @@
     <Content Include="Content\Environment\ScoreFrame.png" />
     <Content Include="Content\Environment\Tree1.png" />
     <Content Include="Content\Environment\Tree2.png" />
+    <Content Include="Content\Environment\Tree3.png" />
     <Content Include="Content\FlameThrower\FlameThrowerLA.png" />
     <Content Include="Content\FlameThrower\FlameThrowerLW.png" />
     <Content Include="Content\FlameThrower\FlameThrowerRA.png" />
