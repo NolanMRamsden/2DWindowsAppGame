@@ -15,7 +15,7 @@ namespace FieldFighter.Hittable
     public abstract class HittableCharacter : HittableTarget
     {
         public FieldFighter.Hittable.CharacterEnums.EType canAttackType;
-        public SpawnAttribute spawnAttribute = new SpawnAttribute();
+        public SpawnAttribute spawnAttribute;
         protected CharacterBrain brain;
         protected AnimationSet animSet;
         private int splashRange;
@@ -28,6 +28,12 @@ namespace FieldFighter.Hittable
             splashRange = getSplashRange();
             healthBar = new HorizontalHealthBar(getHealthBarLocation());
             healthBar.setNew(getMaxHealth());
+            spawnAttribute = getSpawnAttributes();
+        }
+
+        protected virtual SpawnAttribute getSpawnAttributes()
+        {
+            return new SpawnAttribute();
         }
 
         /**  how the character will be drawn */

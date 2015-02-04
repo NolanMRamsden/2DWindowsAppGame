@@ -25,6 +25,11 @@ namespace FieldFighter.Hittable.Elements
             rangeFactor -= a.rangeFactor;
             aoeFactor -= a.aoeFactor;
         }
+
+        public override string ToString()
+        {
+            return "mel: "+meleeFactor+"rang: "+rangeFactor+"aoe: "+aoeFactor;
+        }
     }
 
 }
