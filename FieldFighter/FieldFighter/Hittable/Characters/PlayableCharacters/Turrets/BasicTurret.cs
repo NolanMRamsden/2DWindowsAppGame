@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Characters.BaseCharacters
 {
-    class MachineTurret : TurretCharacter
+    class BasicTurret : TurretCharacter
     {
         private static LoaderPackage package = new LoaderPackage()
         {
@@ -21,7 +21,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             walkSprites = 1
         };
 
-        public MachineTurret() : base() 
+        public BasicTurret() : base() 
         {
             canAttackType = CharacterEnums.EType.BOTH;
             myType = CharacterEnums.EType.GROUND;
@@ -29,31 +29,25 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override int getRangedDamage()
         {
-            return 8;
-        }
-
-        protected override int getAttackCount()
-        {
-            return 5;
-        }
-        public override string ToString()
-        {
-            return "Machine Turret";
-        }
-
-        protected override int getOffSetDivisor()
-        {
-            return -1;
+            return 250;
         }
 
         protected override Type getProjectileType()
         {
-            return typeof(Bullet);
+            return typeof(SniperBullet);
         }
 
-        protected override CharacterBrain getBrain()
+        protected override int getAttackCount()
         {
-            return new RangedBrain(1100, -100);
+            return 80;
+        }
+        public override string ToString()
+        {
+            return "Basic Turret";
+        }
+        protected override int getOffSetDivisor()
+        {
+            return -1;
         }
 
         protected override AnimationSet getAnimSet()

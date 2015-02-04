@@ -54,9 +54,11 @@ namespace FieldFighter.Hittable
         {
             spawn(upgrader.spawn(type));
         }
-        public void spawnTurret(TurretCharacter t)
+        public void spawnTurret()
         {
-            this.turret = t;
+            if (getMoney() - upgrader.getTurret().getSpawnCost() < 0)
+                return;
+            this.turret = upgrader.getTurret();
             int turretLocation = getFrontLocationX();
             if (facing == CharacterEnums.EDirection.RIGHT)
             {
@@ -89,11 +91,6 @@ namespace FieldFighter.Hittable
         public void upgradeLeft()
         {
             upgrade(upgrader.left);
-        }
-
-        public void buyTurret()
-        {
-            spawnTurret(new BasicTurret());
         }
         public void upgradeRight()
         {

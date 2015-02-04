@@ -45,11 +45,6 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             return typeof(TankBullet);
         }
 
-        protected override CharacterBrain getBrain()
-        {
-            return new RangedBrain(1100, -100);
-        }
-
         protected override AnimationSet getAnimSet()
         {
             return RectangleGenerator.getRectangleAnimSet(50, 50);

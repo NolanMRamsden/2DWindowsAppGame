@@ -22,6 +22,7 @@ namespace FieldFighter.Hittable.Castles
         Type meleeCharacter    {get; set;}
         Type rangedCharacter   {get; set;}
         Type specialCharacter  {get; set;}
+        Type turret            {get; set;}
         String signatureString {get; set;}
 
         public static CastleUpgrader set7 = new CastleUpgrader()
@@ -29,6 +30,7 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 3500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(SuicideJacket),
             rangedCharacter = typeof(SniperCharacter),
             specialCharacter = typeof(Tank),
@@ -40,6 +42,7 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 3000,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(GunSoldierPlus),
             rangedCharacter = typeof(RocketLauncherCharacter),
             specialCharacter = typeof(Tank),
@@ -51,6 +54,7 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 2500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
             rangedCharacter = typeof(PhoneGuy),
             specialCharacter = typeof(Tank),
@@ -62,6 +66,7 @@ namespace FieldFighter.Hittable.Castles
             maxHealth = 2500,
             upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
             rangedCharacter = typeof(MachineGunCharacter),
             specialCharacter = typeof(Tank),
@@ -75,6 +80,7 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200, 300),
             left = set6,
             right = set7,
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(BasicSoldierPlus),
             rangedCharacter = typeof(SniperCharacter),
             specialCharacter = typeof(OrangeBirdSmall),
@@ -88,6 +94,7 @@ namespace FieldFighter.Hittable.Castles
             texture = RectangleGenerator.filled(200, 300),
             left = set4,
             right = set5,
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
             rangedCharacter = typeof(MachineGunCharacter),
             specialCharacter = typeof(OrangeBird),
@@ -100,6 +107,7 @@ namespace FieldFighter.Hittable.Castles
             texture = AnimationLoader.pngToTexture("Bases/TentL.png"),
             left = set2,
             right = set3,
+            turret = typeof(MachineTurret),
             meleeCharacter = typeof(BasicSoldier),
             rangedCharacter = typeof(GunSoldier),
             specialCharacter = typeof(OrangeBirdSmall),
@@ -137,6 +145,11 @@ namespace FieldFighter.Hittable.Castles
                     return (HittableCharacter)Activator.CreateInstance(specialCharacter);
             }         
             return (HittableCharacter)Activator.CreateInstance(meleeCharacter);
+        }
+
+        public TurretCharacter getTurret()
+        {
+            return (TurretCharacter)Activator.CreateInstance(turret);
         }
 
         public override string ToString()
