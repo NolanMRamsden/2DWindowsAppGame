@@ -230,6 +230,8 @@
     <Content Include="Content\SuicideJacket\SuicideJacketLW.png" />
     <Content Include="Content\SuicideJacket\SuicideJacketRA.png" />
     <Content Include="Content\SuicideJacket\SuicideJacketRW.png" />
+    <Content Include="Content\Turrets\MachineTurret\MachineTurret.png" />
+    <Content Include="Content\Turrets\MachineTurret\MachineTurretA.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

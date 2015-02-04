@@ -58,6 +58,26 @@ namespace FieldFighter.Utilities
             return content.Load<Texture2D>(pngName);
         }
 
+        public static AnimationSet loadTurretAnimation(LoaderPackage p)
+        {
+            AnimationSet set = new AnimationSet();
+            String baseString = "Turrets/"+p.sourceString+"/"+p.sourceString;
+            set.rightAttack =  set.leftAttack = pngToAnimation(baseString +"A.png", p.attackSprites, p.attackAnim);
+            set.rightWalk =  set.leftWalk = pngToAnimation(baseString + ".png", p.walkSprites, p.walkAnim);
+            if (p.hasSecondaryAnim)
+            {
+                set.rightAttackRange = pngToAnimation(baseString + rightAttackRange, p.rangeAttackSprites, p.rangeAttackAnim);
+                set.leftAttackRange = pngToAnimation(baseString + leftAttackRange, p.rangeAttackSprites, p.rangeAttackAnim);
+            }else
+            {
+                set.rightAttackRange = set.rightAttack;
+                set.leftAttackRange = set.leftAttack;
+            }
+
+            set.currentAnimation = set.rightWalk;
+            return set;
+        }
+
         private static Animation pngToAnimation(String pngName, int sprites, int count)
         {
             Texture2D tex = content.Load<Texture2D>(pngName);

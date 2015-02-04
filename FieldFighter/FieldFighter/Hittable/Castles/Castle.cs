@@ -15,7 +15,7 @@ namespace FieldFighter.Hittable
 {
     public class Castle : HittableTarget
     {
-        const int TurretOffset = 100;
+        const int TurretOffset = 200;
         /** broadcast the targets for opposing enemies */
         public HittableTarget airFrontTarget;
         public HittableTarget groundFrontTarget;

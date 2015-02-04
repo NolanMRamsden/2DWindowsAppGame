@@ -14,10 +14,10 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
     {
         private static LoaderPackage package = new LoaderPackage()
         {
-            sourceString = "Soldier",
-            attackAnim = 1,
-            attackSprites = 1,
-            walkAnim = 1,
+            sourceString = "MachineTurret",
+            attackAnim = 5,
+            attackSprites = 2,
+            walkAnim = 100,
             walkSprites = 1
         };
 
@@ -43,12 +43,12 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override int getOffSetDivisor()
         {
-            return -1;
+            return 10;
         }
 
         protected override AnimationSet getAnimSet()
         {
-            return RectangleGenerator.getRectangleAnimSet(50, 50);
+            return AnimationLoader.loadTurretAnimation(package);
         }
     }
 }
