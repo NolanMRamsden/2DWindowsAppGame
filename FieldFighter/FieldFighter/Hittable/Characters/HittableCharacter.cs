@@ -15,7 +15,7 @@ namespace FieldFighter.Hittable
     public abstract class HittableCharacter : HittableTarget
     {
         public FieldFighter.Hittable.CharacterEnums.EType canAttackType;
-
+        public SpawnAttribute spawnAttribute = new SpawnAttribute();
         protected CharacterBrain brain;
         protected AnimationSet animSet;
         private int splashRange;

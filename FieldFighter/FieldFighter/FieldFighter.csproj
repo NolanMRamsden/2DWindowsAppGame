@@ -130,6 +130,7 @@
     <Compile Include="Hittable\Elements\Bullet.cs" />
     <Compile Include="Hittable\Elements\Projectile.cs" />
     <Compile Include="Hittable\Elements\SniperBullet.cs" />
+    <Compile Include="Hittable\Elements\SpawnAttribute.cs" />
     <Compile Include="Pages\GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>

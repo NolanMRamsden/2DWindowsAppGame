@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Elements
 {
-    class SpawnAttribute
+    public class SpawnAttribute
     {
         public int meleeFactor = 0;
         public int rangeFactor = 0;

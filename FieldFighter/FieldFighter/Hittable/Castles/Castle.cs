@@ -20,6 +20,7 @@ namespace FieldFighter.Hittable
         public HittableTarget airFrontTarget;
         public HittableTarget groundFrontTarget;
         public Texture2D castleTexture;
+        public SpawnAttribute characterTotals = new SpawnAttribute();
 
         protected CastleUpgrader upgrader;
         protected List<HittableCharacter> characters = new List<HittableCharacter>();
@@ -86,6 +87,7 @@ namespace FieldFighter.Hittable
                 c.spawn(xCoordinate+castleTexture.Width+1, facing);
             else
                 c.spawn(xCoordinate-1, facing);
+            characterTotals.add(c.spawnAttribute);
             characters.Insert(0, c);
         }
         public void upgradeLeft()
