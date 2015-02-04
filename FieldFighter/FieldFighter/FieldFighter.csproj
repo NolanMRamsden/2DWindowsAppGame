@@ -193,6 +193,16 @@
     <Content Include="Content\MachineGunner\MachineGunnerLW.png" />
     <Content Include="Content\MachineGunner\MachineGunnerRA.png" />
     <Content Include="Content\MachineGunner\MachineGunnerRW.png" />
+    <Content Include="Content\Numbers\0.png" />
+    <Content Include="Content\Numbers\1.png" />
+    <Content Include="Content\Numbers\2.png" />
+    <Content Include="Content\Numbers\3.png" />
+    <Content Include="Content\Numbers\4.png" />
+    <Content Include="Content\Numbers\5.png" />
+    <Content Include="Content\Numbers\6.png" />
+    <Content Include="Content\Numbers\7.png" />
+    <Content Include="Content\Numbers\8.png" />
+    <Content Include="Content\Numbers\9.png" />
     <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallLA.png" />
     <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallLW.png" />
     <Content Include="Content\OrangeBirdSmall\OrangeBirdSmallRA.png" />
