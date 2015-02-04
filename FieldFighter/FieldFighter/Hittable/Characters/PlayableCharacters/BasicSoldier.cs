@@ -60,7 +60,6 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         protected override AnimationSet getAnimSet()
         {
             return AnimationLoader.loadAnimation(package);
-            //return RectangleGenerator.getRectangleAnimSet(50, 50);
         }
     }
 

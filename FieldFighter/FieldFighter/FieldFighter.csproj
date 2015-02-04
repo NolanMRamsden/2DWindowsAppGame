@@ -111,6 +111,7 @@
     <Compile Include="Enviroment\Ground.cs" />
     <Compile Include="Enviroment\Sky.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Hittable\Castles\AICastle.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\MeleeCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\RangedCharacter.cs" />
     <Compile Include="Hittable\Characters\BaseCharacters\TurretCharacter.cs" />

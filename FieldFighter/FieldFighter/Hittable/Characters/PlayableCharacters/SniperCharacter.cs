@@ -139,17 +139,17 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override int getWalkSpeed()
         {
-            return 3;
+            return 2;
         }
 
         protected override int getAttackCount()
         {
-            return (int)(10);
+            return 8;
         }
 
         protected override int getRangedDamage()
         {
-            return (int)(25);
+            return 15;
         }
 
         protected override Utilities.AnimationSet getAnimSet()

@@ -76,7 +76,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set3 = new CastleUpgrader()
         {
             maxHealth = 2000,
-            upgradeCost = 1000,
+            upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 300),
             left = set6,
             right = set7,
@@ -90,7 +90,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set2 = new CastleUpgrader()
         {
             maxHealth = 1500,
-            upgradeCost = 1000,
+            upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 300),
             left = set4,
             right = set5,

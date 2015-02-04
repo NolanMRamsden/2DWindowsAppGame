@@ -141,7 +141,7 @@ namespace FieldFighter.Hittable
         }
 
         /** updates the front target and held characters */
-        public void updateCharacters(Castle enemyCastle)
+        public virtual void updateCharacters(Castle enemyCastle)
         {
             if(turret != null)
             {
@@ -182,7 +182,10 @@ namespace FieldFighter.Hittable
         /** draws castle as well as its characters, calls base to get healthbar */
         public override void draw(SpriteBatch batch)
         {
-            
+            if (turret != null)
+            {
+                turret.draw(batch);
+            }  
             base.draw(batch);
             if(facing == CharacterEnums.EDirection.RIGHT)
                 batch.Draw(castleTexture, getLocation(), null, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0);
@@ -196,10 +199,6 @@ namespace FieldFighter.Hittable
                 groundFrontTarget.draw(batch);
             if(this != airFrontTarget)
                 airFrontTarget.draw(batch);
-            if (turret != null)
-            {
-                turret.draw(batch);
-            }
         }
 
         /** occupied space */

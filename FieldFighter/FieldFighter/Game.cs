@@ -1,5 +1,6 @@
 using FieldFighter.Enviroment;
 using FieldFighter.Hittable;
+using FieldFighter.Hittable.Castles;
 using FieldFighter.Hittable.CharacterLogic;
 using FieldFighter.Hittable.Characters;
 using FieldFighter.Hittable.Characters.BaseCharacters;
@@ -41,7 +42,7 @@ namespace FieldFighter
             HealthBar.device = GraphicsDevice;
             Constants.setConstants(Window.ClientBounds);
             left = new Castle(CharacterEnums.EDirection.RIGHT, Constants.leftBaseX);
-            right = new Castle(CharacterEnums.EDirection.LEFT, Constants.rightBaseX);
+            right = new AICastle(CharacterEnums.EDirection.LEFT, Constants.rightBaseX);
             env = new GameEnviroment(Window.ClientBounds,left,right);   
         }
 
