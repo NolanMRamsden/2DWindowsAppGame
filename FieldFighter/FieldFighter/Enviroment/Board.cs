@@ -12,8 +12,8 @@ namespace FieldFighter.Enviroment
 {
     public class Board
     {
-        const int boardWidth = 600;
-        const int boardHeight = 300;
+        public const int boardWidth = 600;
+        public const int boardHeight = 300;
 
 
         private Castle castle;
@@ -45,6 +45,8 @@ namespace FieldFighter.Enviroment
             else
             {
                 batch.Draw(board, new Rectangle(location.X, location.Y, boardWidth, boardHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0);
+                batch.Draw(castle.castleTexture, new Rectangle(location.X + 2*boardWidth/3, location.Y + boardHeight / 4, boardHeight / 2, boardHeight / 2), Color.White);
+                NumberDrawer.drawNumber(batch, castle.getMoney(), location.X + boardWidth / 4, location.Y + boardHeight / 4);
             }
         }
     }

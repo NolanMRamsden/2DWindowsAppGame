@@ -14,12 +14,13 @@ namespace FieldFighter.Enviroment
     {
         private Sky sky;
         private Ground ground;
-        private Board b;
+        private Board b1,b2;
 
         public GameEnviroment(Rectangle screenBounds, Castle leftCastle, Castle rightCastle)
         {
             ground = new Ground(Constants.groundHeight, screenBounds.Width, screenBounds.Height);
-            b = new Board(leftCastle, new Point(10, 10));
+            b1 = new Board(leftCastle, new Point(10, 10));
+            b2 = new Board(rightCastle, new Point(screenBounds.Width-Board.boardWidth-10, 10));
         }
 
         public override void update()
@@ -30,7 +31,8 @@ namespace FieldFighter.Enviroment
         public override void draw(SpriteBatch batch)
         {
             ground.draw(batch);
-            b.draw(batch);
+            b1.draw(batch);
+            b2.draw(batch);
         }
     }
 
