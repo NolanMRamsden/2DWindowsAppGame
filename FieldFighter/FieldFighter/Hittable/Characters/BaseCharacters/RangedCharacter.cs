@@ -17,11 +17,13 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected List<Projectile> projectiles = new List<Projectile>();
 
-        public override void update(HittableTarget groundTarget, HittableTarget airTarget)
+        public override void update(Castle enemy)
         {
+            HittableTarget groundTarget = enemy.groundFrontTarget;
+            HittableTarget airTarget = enemy.airFrontTarget;
             for (int i = 0; i < projectiles.Count; i++)
                 if (projectiles[i].update()) projectiles.RemoveAt(i);
-            base.update(groundTarget, airTarget);
+            base.update(enemy);
         }
 
         public override void draw(SpriteBatch batch)

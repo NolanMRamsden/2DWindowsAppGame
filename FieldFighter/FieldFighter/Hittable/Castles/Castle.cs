@@ -112,7 +112,7 @@ namespace FieldFighter.Hittable
         {
             if(turret != null)
             {
-                turret.update(enemyCastle.groundFrontTarget, enemyCastle.airFrontTarget);
+                turret.update(enemyCastle);
             }
             money += Constants.moneyEarnRate;
             groundFrontTarget = this;
@@ -126,7 +126,7 @@ namespace FieldFighter.Hittable
                 }
                 else
                 {
-                    characters[i].update(enemyCastle.groundFrontTarget, enemyCastle.airFrontTarget);
+                    characters[i].update(enemyCastle);
                     if (characters[i].myType == CharacterEnums.EType.BOTH)
                     {
                         groundFrontTarget = inFront(characters[i], groundFrontTarget);

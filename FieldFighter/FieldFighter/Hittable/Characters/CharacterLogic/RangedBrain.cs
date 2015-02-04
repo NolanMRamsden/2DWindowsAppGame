@@ -9,7 +9,6 @@ namespace FieldFighter.Hittable.CharacterLogic
     class PureRangedBrain : CharacterBrain
     {
         private int rangedAttackDistance;
-        private int meleeAttackDistance;
 
         public PureRangedBrain(int rangedAttackDistance ) : base()
         {

@@ -45,8 +45,10 @@ namespace FieldFighter.Hittable
         {
             return new MeleeBrain(50);
         }
-        public virtual void update(HittableTarget groundTarget, HittableTarget airTarget)
+        public virtual void update(Castle enemy)
         {
+            HittableTarget groundTarget = enemy.groundFrontTarget;
+            HittableTarget airTarget = enemy.airFrontTarget;
             if (dead())
             {
                 return;
