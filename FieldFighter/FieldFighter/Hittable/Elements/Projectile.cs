@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FieldFighter.Hittable.Elements
 {
-    abstract class Projectile
+    public abstract class Projectile
     {
         public Projectile(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target) { }
         public abstract Boolean update();

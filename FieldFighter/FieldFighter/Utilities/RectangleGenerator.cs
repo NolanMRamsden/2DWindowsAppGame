@@ -38,6 +38,7 @@ namespace FieldFighter.Utilities
             AnimationSet animSet = new AnimationSet();
             animSet.currentAnimation = animSet.leftWalk = animSet.rightWalk = new Animation(text, 1, 1, 0, 1);
             animSet.leftAttack = animSet.rightAttack = new Animation(text, 1, 1, 0, 1);
+            animSet.leftAttackRange = animSet.rightAttackRange = animSet.leftAttack;
             return animSet;
         }
     }

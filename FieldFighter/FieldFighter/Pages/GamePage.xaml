@@ -8,11 +8,13 @@
     mc:Ignorable="d">
 
     <Grid>
+        <Button Content="Turret-Right" HorizontalAlignment="Left" Margin="1270,800,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_RightTurret"/>
         <Button Content="Melee-Right" HorizontalAlignment="Left" Margin="1100,800,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_1"/>
         <Button Content="Range-Right" HorizontalAlignment="Left" Margin="1100,850,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_2"/>
         <Button Content="Air-Right" HorizontalAlignment="Left" Margin="1100,900,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_3"/>
         <Button Content="Upgrade-Right-Right" HorizontalAlignment="Left" Margin="1270,950,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_4R"/>
         <Button Content="Upgrade-Right-Left" HorizontalAlignment="Left" Margin="1100,950,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_4L"/>
+        <Button Content="Turret-Left" HorizontalAlignment="Left" Margin="180,800,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_LeftTurret"/>
         <Button Content="Melee-Left" HorizontalAlignment="Left" Margin="10,800,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_5"/>
         <Button Content="Range-Left" HorizontalAlignment="Left" Margin="10,850,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_6"/>
         <Button Content="Air-Left" HorizontalAlignment="Left" Margin="10,900,0,0" VerticalAlignment="Top" Tapped="Button_Tapped_7"/>
