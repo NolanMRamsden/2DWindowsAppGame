@@ -52,8 +52,13 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
                         Rectangle r = getLocation();
                         int bulletHeight = (int)(r.Center.Y + r.Height / getOffSetDivisor());
                         Logger.d(ToString() + " attacked " + target.ToString() + "(Ranged " + getRangedDamage() + " dmg)");
-                        projectiles.Add((Projectile)Activator.CreateInstance(getProjectileType(), 
-                                         new object[]{facing,new Vector2(getFrontLocationX(), bulletHeight),
+                        if(getFrontLocationX() > target.getFrontLocationX())
+                            projectiles.Add((Projectile)Activator.CreateInstance(getProjectileType(), 
+                                         new object[]{CharacterEnums.EDirection.LEFT,new Vector2(getFrontLocationX(), bulletHeight),
+                                         getRangedDamage(),target}));
+                        else
+                            projectiles.Add((Projectile)Activator.CreateInstance(getProjectileType(),
+                                         new object[]{CharacterEnums.EDirection.RIGHT,new Vector2(getFrontLocationX(), bulletHeight),
                                          getRangedDamage(),target}));
                     }
                 }
