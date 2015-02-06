@@ -77,7 +77,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         private static LoaderPackage package = new LoaderPackage()
         {
             sourceString = "RocketMan",
-            attackAnim = 25,
+            attackAnim = 50,
             attackSprites = 6,
             walkAnim = 10,
             walkSprites = 6
@@ -86,6 +86,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         public override string ToString()
         {
             return "Rocket Launcher";
+        }
+
+        protected override int getAttackCount()
+        {
+            return base.getAttackCount()*2;
         }
 
         protected override int getRangedDamage()

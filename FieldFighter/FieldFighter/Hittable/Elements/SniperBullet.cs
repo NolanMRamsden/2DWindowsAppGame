@@ -29,7 +29,9 @@ namespace FieldFighter.Hittable.Elements
         const int splashRange = 100;
 
         public RocketBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
-            : base(direction, startLocation, damage, target, enemyCastle) { }
+            : base(direction, startLocation, damage, target, enemyCastle) 
+        {
+        }
 
         private double xMagnitude = 0;
         private double xAccel = 1.65;
@@ -37,6 +39,11 @@ namespace FieldFighter.Hittable.Elements
         protected override Microsoft.Xna.Framework.Graphics.Texture2D getTexture()
         {
             return AnimationLoader.pngToTexture("Bullets/Rocket2.png");
+        }
+
+        public override bool isSplash()
+        {
+            return true;
         }
 
         protected override void hitTarget()
@@ -66,6 +73,11 @@ namespace FieldFighter.Hittable.Elements
         protected override void hitTarget()
         {
             enemyCastle.hitForSplash(damage, splashRange, target.myType);
+        }
+
+        public override bool isSplash()
+        {
+            return true ;
         }
 
         protected override int getSpeed()

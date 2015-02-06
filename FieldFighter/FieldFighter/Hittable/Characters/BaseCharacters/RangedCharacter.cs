@@ -77,5 +77,21 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         {
             return typeof(Bullet);
         }
+        /** factor projectile type into spawn attribute */
+        protected override SpawnAttribute getSpawnAttributes()
+        {
+            Projectile p = (Projectile)Activator.CreateInstance(getProjectileType(),
+                                         new object[]{CharacterEnums.EDirection.RIGHT,new Vector2(0,0),
+                                         getRangedDamage(),this,null});
+            int aoe = 0;
+            if (p.isSplash())
+                aoe = getRangedDamage();
+            return new SpawnAttribute()
+            {
+                meleeFactor = getMeleeDamage(),
+                rangeFactor = getRangedDamage(),
+                aoeFactor = aoe
+            };
+        }
     }
 }

@@ -245,6 +245,7 @@ namespace FieldFighter.Hittable
             details += "\n\tmelee: " + upgrader.spawn(ECharacterType.MELEE).ToString();
             details += "\n\trange: " + upgrader.spawn(ECharacterType.RANGED).ToString();
             details += "\n\tair  : " + upgrader.spawn(ECharacterType.SPECIAL).ToString();
+            details += "\n\t" + characterTotals.ToString();
             return details;
         }
     }

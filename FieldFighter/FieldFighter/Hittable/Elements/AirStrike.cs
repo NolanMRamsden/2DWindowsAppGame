@@ -33,6 +33,11 @@ namespace FieldFighter.Hittable.Elements
                 finalDestination = Constants.groundHeight;
         }
 
+        public override bool isSplash()
+        {
+            return true;
+        }
+
         public virtual Texture2D getTargetMarker()
         {
             return AnimationLoader.pngToTexture("Bullets/TargetMarker.png");

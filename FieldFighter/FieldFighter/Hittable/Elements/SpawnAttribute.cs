@@ -28,7 +28,7 @@ namespace FieldFighter.Hittable.Elements
 
         public override string ToString()
         {
-            return "mel: "+meleeFactor+"rang: "+rangeFactor+"aoe: "+aoeFactor;
+            return "mel: "+meleeFactor+" rang: "+rangeFactor+" aoe: "+aoeFactor;
         }
     }
 

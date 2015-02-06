@@ -13,5 +13,9 @@ namespace FieldFighter.Hittable.Elements
         public Projectile(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle) { }
         public abstract Boolean update();
         public abstract void draw(SpriteBatch batch);
+        public virtual Boolean isSplash()
+        {
+            return false;
+        }
     }
 }

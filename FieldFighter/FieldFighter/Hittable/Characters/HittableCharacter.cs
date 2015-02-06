@@ -33,7 +33,12 @@ namespace FieldFighter.Hittable
 
         protected virtual SpawnAttribute getSpawnAttributes()
         {
-            return new SpawnAttribute();
+            return new SpawnAttribute()
+                {
+                    meleeFactor = getMeleeDamage(),
+                    rangeFactor = getRangedDamage(),
+                    aoeFactor = getSplashRange()
+                };
         }
 
         /**  how the character will be drawn */
