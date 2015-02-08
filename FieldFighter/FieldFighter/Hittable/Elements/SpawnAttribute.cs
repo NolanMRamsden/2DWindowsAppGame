@@ -11,12 +11,14 @@ namespace FieldFighter.Hittable.Elements
         public int meleeFactor = 0;
         public int rangeFactor = 0;
         public int aoeFactor = 0;
+        public int speedFactor = 0;
 
         public void add(SpawnAttribute a)
         {
             meleeFactor += a.meleeFactor;
             rangeFactor += a.rangeFactor;
             aoeFactor += a.aoeFactor;
+            speedFactor += a.speedFactor;
         }
 
         public void sub(SpawnAttribute a)
@@ -24,6 +26,21 @@ namespace FieldFighter.Hittable.Elements
             meleeFactor -= a.meleeFactor;
             rangeFactor -= a.rangeFactor;
             aoeFactor -= a.aoeFactor;
+            speedFactor -= a.speedFactor;
+        }
+
+        public int getMaxIndex()
+        {
+            if (meleeFactor > rangeFactor && meleeFactor > aoeFactor)
+                return 1;
+            if (rangeFactor > aoeFactor)
+                return 2;
+            return 3;
+        }
+
+        public int sum()
+        {
+            return meleeFactor + rangeFactor + speedFactor + aoeFactor;
         }
 
         public override string ToString()

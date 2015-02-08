@@ -61,6 +61,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         {
             return AnimationLoader.loadAnimation(package);
         }
+
+        public override int getSpawnCost()
+        {
+            return 100;
+        }
     }
 
     class BasicSoldierPlus : BasicSoldier

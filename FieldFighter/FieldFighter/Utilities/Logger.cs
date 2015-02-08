@@ -19,7 +19,7 @@ namespace FieldFighter.Utilities
 
         private static void log(String tag, String message)
         {
-            Debug.WriteLine(System.DateTime.Now.ToString("HH:mm:ss.fff") + " " + tag + " -- " + message);
+            //Debug.WriteLine(System.DateTime.Now.ToString("HH:mm:ss.fff") + " " + tag + " -- " + message);
         }
     }
 }

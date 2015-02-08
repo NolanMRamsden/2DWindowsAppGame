@@ -37,7 +37,8 @@ namespace FieldFighter.Hittable
                 {
                     meleeFactor = getMeleeDamage(),
                     rangeFactor = getRangedDamage(),
-                    aoeFactor = getSplashRange()
+                    aoeFactor = getSplashRange(),
+                    speedFactor = getWalkSpeed()
                 };
         }
 

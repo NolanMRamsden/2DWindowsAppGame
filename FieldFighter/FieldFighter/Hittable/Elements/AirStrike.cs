@@ -56,7 +56,7 @@ namespace FieldFighter.Hittable.Elements
 
             if (projectileY + 100 >= finalDestination)
             {
-                enemyCastle.hitForSplash(damage, 125, target.myType);
+                enemyCastle.hitForSplash(damage, 225, target.myType);
                 return true;
             }
             return false;

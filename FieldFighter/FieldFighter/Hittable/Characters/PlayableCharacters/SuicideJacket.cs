@@ -39,5 +39,10 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
         {
             return "Suicide Jacket Man";
         }
+
+        public override int getSpawnCost()
+        {
+            return 300;
+        }
     }
 }

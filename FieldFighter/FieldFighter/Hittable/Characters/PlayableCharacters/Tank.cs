@@ -76,5 +76,10 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
         {
             return AnimationLoader.loadAnimation(package);
         }
+
+        public override int getSpawnCost()
+        {
+            return 1500;
+        }
     }
 }

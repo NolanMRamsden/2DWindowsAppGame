@@ -29,7 +29,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override int getMaxHealth()
         {
-            return base.getMaxHealth()*2;
+            return base.getMaxHealth()*8;
         }
 
         protected override int getWalkSpeed()
@@ -44,7 +44,12 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         public override string ToString()
         {
-            return "Ground Tank Man";
+            return "Riot Man";
+        }
+
+        public override int getSpawnCost()
+        {
+            return 250;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace FieldFighter.Utilities
     {
         /** screen size dependants */
         public static int groundHeight;
-        const double groundFactor = .8;
+        const double groundFactor = .7;
         public static int airHeight;
         const double airFactor = .65;
         public static int screenHeight;
@@ -20,13 +20,13 @@ namespace FieldFighter.Utilities
         public static int leftBaseX;
         public static int rightBaseX;
         
-        public const int startingMoney = 10000;
+        public const int startingMoney = 1000;
 
         public const double upgradeHealthBoost = .10;
 
         public const int defaultMeleeDistance = 5;
 
-        public const double moneyEarnRate = .08;
+        public const double moneyEarnRate = .1;
 
 
         public static void setConstants(Rectangle ScreenBounds)

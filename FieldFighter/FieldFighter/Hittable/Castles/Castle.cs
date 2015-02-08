@@ -45,7 +45,7 @@ namespace FieldFighter.Hittable
                 this.xCoordinate = Xco;
                 this.healthBar = new VerticalHealthBar(ELocation.LEFT);
             }
-            healthBar.setNew(getMaxHealth());
+            healthBar.setNew(upgrader.maxHealth);
             groundFrontTarget = this;
             airFrontTarget = this;
         }
@@ -177,12 +177,6 @@ namespace FieldFighter.Hittable
             }
         }
 
-        /** determines the init health of castle */
-        public virtual int getMaxHealth()
-        {
-            return 5000;
-        }
-
         /** draws castle as well as its characters, calls base to get healthbar */
         public override void draw(SpriteBatch batch)
         {
@@ -212,7 +206,7 @@ namespace FieldFighter.Hittable
         }
 
         /** handle new health on upgrade */
-        private void upgrade(CastleUpgrader g)
+        protected virtual void upgrade(CastleUpgrader g)
         {
             if (g != null)
             {
@@ -230,6 +224,7 @@ namespace FieldFighter.Hittable
                 healthBar.sethealth((int)(p * healthBar.maxHealth));
                 castleTexture = upgrader.texture;
             }
+            Logger.d(details());
         }
 
         public override string ToString()

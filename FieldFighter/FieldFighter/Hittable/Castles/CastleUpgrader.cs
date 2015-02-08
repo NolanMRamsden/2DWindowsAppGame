@@ -28,7 +28,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set7 = new CastleUpgrader()
         {
             maxHealth = 1000,
-            upgradeCost = 2000,
+            upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(SuicideJacket),
@@ -40,7 +40,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set6 = new CastleUpgrader()
         {
             maxHealth = 1000,
-            upgradeCost = 2000,
+            upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(GunSoldierPlus),
@@ -52,7 +52,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set5 = new CastleUpgrader()
         {
             maxHealth = 1000,
-            upgradeCost = 2000,
+            upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
@@ -64,7 +64,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set4 = new CastleUpgrader()
         {
             maxHealth = 1000,
-            upgradeCost = 2000,
+            upgradeCost = 5000,
             texture = RectangleGenerator.filled(200, 400),
             turret = typeof(MachineTurret),
             meleeCharacter = typeof(RiotMan),
@@ -76,7 +76,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set3 = new CastleUpgrader()
         {
             maxHealth = 8000,
-            upgradeCost = 1000,
+            upgradeCost = 3000,
             texture = RectangleGenerator.filled(200, 300),
             left = set6,
             right = set7,
@@ -90,7 +90,7 @@ namespace FieldFighter.Hittable.Castles
         public static CastleUpgrader set2 = new CastleUpgrader()
         {
             maxHealth = 7500,
-            upgradeCost = 5000,
+            upgradeCost = 3000,
             texture = RectangleGenerator.filled(200, 300),
             left = set4,
             right = set5,
@@ -152,6 +152,13 @@ namespace FieldFighter.Hittable.Castles
             return (TurretCharacter)Activator.CreateInstance(turret);
         }
 
+        public bool canUpgrade(int money)
+        {
+            if (left != null && right != null)
+                if (money - left.upgradeCost > 0)
+                    return true;
+            return false;
+        }
         public override string ToString()
         {
             return signatureString;

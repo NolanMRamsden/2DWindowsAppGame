@@ -68,6 +68,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             return AnimationLoader.loadAnimation(package);
         }
 
+        public override int getSpawnCost()
+        {
+            return 150;
+        }
+
     }
 
     class GunSoldierPlus : GunSoldier
@@ -87,5 +92,9 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             return (int)(base.getRangedDamage()*1.2);
         }
 
+        public override int getSpawnCost()
+        {
+            return 200;
+        }
     }
 }

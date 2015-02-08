@@ -41,8 +41,8 @@ namespace FieldFighter
             //TODO: switch healthbar to use the rectangle generator
             HealthBar.device = GraphicsDevice;
             Constants.setConstants(Window.ClientBounds);
-            left = new Castle(CharacterEnums.EDirection.RIGHT, Constants.leftBaseX);
-            right = new Castle(CharacterEnums.EDirection.LEFT, Constants.rightBaseX);
+            left = new AICastle(CharacterEnums.EDirection.RIGHT, Constants.leftBaseX);
+            right = new AICastle(CharacterEnums.EDirection.LEFT, Constants.rightBaseX);
             env = new GameEnviroment(Window.ClientBounds,left,right);   
         }
 

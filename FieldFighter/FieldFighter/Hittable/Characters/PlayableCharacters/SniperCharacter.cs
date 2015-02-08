@@ -43,7 +43,7 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override CharacterBrain getBrain()
         {
-            return new RangedHiderBrain(1500,100);
+            return new RangedHiderBrain(1000,100);
         }
 
         protected override int getMeleeDamage()
@@ -70,6 +70,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
         {
             return 10;
         }
+
+        public override int getSpawnCost()
+        {
+            return 1000;
+        }
     }
 
     class RocketLauncherCharacter : SniperCharacter
@@ -93,11 +98,6 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             return base.getAttackCount()*2;
         }
 
-        protected override int getRangedDamage()
-        {
-            return (int)(base.getRangedDamage()*2);
-        }
-
         protected override AnimationSet getAnimSet()
         {
             return AnimationLoader.loadAnimation(package);
@@ -110,12 +110,17 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
 
         protected override CharacterBrain getBrain()
         {
-            return new RangedBrain(2000, 100);
+            return new RangedBrain(800, 100);
         }
 
         protected override int getOffSetDivisor()
         {
             return -6;
+        }
+
+        public override int getSpawnCost()
+        {
+            return 1500;
         }
 
     }
@@ -175,6 +180,12 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             else
                 return 6;
         }
+
+        public override int getSpawnCost()
+        {
+            return 700;
+        }
+
     }
      
 }

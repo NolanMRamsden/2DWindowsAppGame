@@ -54,7 +54,7 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
 
         protected override int getRangedDamage()
         {
-            return 500;
+            return 300;
         }
 
         protected override int getAttackCount()
@@ -71,6 +71,11 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
         {
             return AnimationLoader.loadAnimation(package);
         }
+
+        public override int getSpawnCost()
+        {
+            return 1000;
+        }
     }
 
     class PhoneGuyLazor : PhoneGuy
@@ -86,6 +91,10 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
         protected override int getAttackCount()
         {
             return 500;
+        }
+        public override int getSpawnCost()
+        {
+            return 900;
         }
     }
 }
