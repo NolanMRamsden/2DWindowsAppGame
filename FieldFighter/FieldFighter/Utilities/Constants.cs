@@ -20,13 +20,12 @@ namespace FieldFighter.Utilities
         public static int leftBaseX;
         public static int rightBaseX;
         
-        public const int startingMoney = 1000;
-
+        public const int startingMoney = 2000;
+        public const double moneyEarnRate = .25;
         public const double upgradeHealthBoost = .10;
 
         public const int defaultMeleeDistance = 5;
 
-        public const double moneyEarnRate = .1;
 
 
         public static void setConstants(Rectangle ScreenBounds)

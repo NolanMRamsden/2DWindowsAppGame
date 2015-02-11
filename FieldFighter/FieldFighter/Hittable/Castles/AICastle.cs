@@ -64,7 +64,7 @@ namespace FieldFighter.Hittable.Castles
                 counter = 0;
                 int startCount = characters.Count;
                 // we have a guy past half way, and can afford upgrade, do it
-                if (upgrader.canUpgrade(getMoney()) && Math.Abs(groundFrontTarget.getFrontLocationX() - enemyCastle.getFrontLocationX()) < 1500)
+                if (upgrader.canUpgrade(getMoney()))
                 {
                     int up = r.Next(0, 2);
                     if (up == 0)
@@ -88,8 +88,8 @@ namespace FieldFighter.Hittable.Castles
                 else if (enemyCastle.characterTotals.getMaxIndex() == 3)
                     spawn(rangeChoice);
                 //we didnt spawn anything (couldnt afford) try cheep
-                if (startCount == characters.Count && Math.Abs(enemyCastle.groundFrontTarget.getFrontLocationX() - getFrontLocationX()) < settleDistance)
-                    spawn(cheapChoice);
+                //if (startCount == characters.Count && Math.Abs(enemyCastle.groundFrontTarget.getFrontLocationX() - getFrontLocationX()) < settleDistance)
+                //    spawn(cheapChoice);
             }
             lastHealth = (int)healthBar.health;
             base.updateCharacters(enemyCastle);

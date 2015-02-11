@@ -22,6 +22,11 @@ namespace FieldFighter.Hittable.Characters.BaseCharacters
             hasSecondaryAnim = true
         };
 
+        protected override int getMeleeDamage()
+        {
+            return base.getMeleeDamage()*2;
+        }
+
         protected override int getAttackCount()
         {
             return base.getAttackCount()*2;

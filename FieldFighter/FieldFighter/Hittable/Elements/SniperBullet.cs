@@ -41,9 +41,9 @@ namespace FieldFighter.Hittable.Elements
             return AnimationLoader.pngToTexture("Bullets/Rocket2.png");
         }
 
-        public override bool isSplash()
+        public override int getSplashRange()
         {
-            return true;
+            return splashRange;
         }
 
         protected override void hitTarget()
@@ -60,7 +60,7 @@ namespace FieldFighter.Hittable.Elements
 
     class TankBullet : Bullet
     {
-        const int splashRange = 50;
+        const int splashRange = 0;
 
         public TankBullet(CharacterEnums.EDirection direction, Vector2 startLocation, int damage, HittableTarget target, Castle enemyCastle)
             : base(direction, startLocation, damage, target, enemyCastle) { }
@@ -68,16 +68,6 @@ namespace FieldFighter.Hittable.Elements
         protected override Microsoft.Xna.Framework.Graphics.Texture2D getTexture()
         {
             return AnimationLoader.pngToTexture("Bullets/TankBullet.png");
-        }
-
-        protected override void hitTarget()
-        {
-            enemyCastle.hitForSplash(damage, splashRange, target.myType);
-        }
-
-        public override bool isSplash()
-        {
-            return true ;
         }
 
         protected override int getSpeed()

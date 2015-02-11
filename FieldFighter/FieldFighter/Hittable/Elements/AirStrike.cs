@@ -33,9 +33,9 @@ namespace FieldFighter.Hittable.Elements
                 finalDestination = Constants.groundHeight;
         }
 
-        public override bool isSplash()
+        public override int getSplashRange()
         {
-            return true;
+ 	         return 225;
         }
 
         public virtual Texture2D getTargetMarker()

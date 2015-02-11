@@ -54,7 +54,7 @@ namespace FieldFighter.Hittable.Characters.PlayableCharacters
 
         protected override int getRangedDamage()
         {
-            return 300;
+            return 250;
         }
 
         protected override int getAttackCount()
